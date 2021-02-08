@@ -6,18 +6,19 @@
 
 - Node.js
 - NPM
+- Yarn
 
 ## Installation
 
 
 ```bash
-npm install
+yarn install
 ```
 
 ## Usage
 
 ```javascript
-npm run serve
+yarn serve
 ```
 
 ## Deploy

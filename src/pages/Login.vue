@@ -91,7 +91,7 @@
       width: 100%;
     }
     .login-body .login-panel .login-panel-content {
-      padding: 12px 38px;
+      padding: 58px 38px;
     }
   }
 </style>

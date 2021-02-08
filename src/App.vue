@@ -1,28 +1,44 @@
 <template>
-  <Login/>
+    <div id="nav" v-if="!currentRouteIsLogin">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
 </template>
 
+
 <script>
-  import Login from './pages/Login.vue';
-
-  export default {
-    name: 'App',
-    components: {
-      Login,
+    export default {
+        computed: {
+            currentRouteIsLogin() {
+                return this.$route.name === 'Login';
+            }
+        }
     }
-  }
 </script>
+<style lang="scss">
+    body {
+        margin: 0;
+    }
 
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333333;
-    background-color: #edf0f5;
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+    }
+
+    #nav {
+        padding: 30px;
+
+        a {
+            font-weight: bold;
+            color: #2c3e50;
+
+            &.router-link-exact-active {
+                color: #42b983;
+            }
+        }
+    }
 </style>

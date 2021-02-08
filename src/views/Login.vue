@@ -34,12 +34,13 @@
 </script>
 
 <style lang="scss">
-  .login-body {
-    background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/08/Data-background.png");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    .login-body {
+        background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/08/Data-background.png");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
   .login-body .login-panel {
     width: 565px;
     height: 410px;

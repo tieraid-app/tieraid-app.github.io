@@ -4,22 +4,22 @@
 
 ## Prerequisites
 
-- Node.js
-- NPM
-- Yarn
+- docker
+- docker-compose
 
 ## Installation
 
 
 ```bash
-yarn install
+./scripts/set_hosts.sh
 ```
 
 ## Usage
 
 ```javascript
-yarn serve
+docker-compose up
 ```
+Visit 
 
 ## Deploy
 Autodeploy when pushing to main!

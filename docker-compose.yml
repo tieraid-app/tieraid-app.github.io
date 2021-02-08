@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  frontend:
+    image: node:10.21.0
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app:z
+    command: sh -c "yarn install && yarn serve"
+    ports:
+      - "1337:8080"

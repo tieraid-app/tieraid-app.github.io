@@ -2,20 +2,20 @@
   <div class="login-body">
     <div class="login-panel ui-fluid">
       <div class="login-panel-content">
-        <div class="p-grid">
+        <form class="p-grid" v-on:submit.prevent="submit">
           <div class="p-col-12">
             <h1>TIERAID NETWORK</h1>
             <h2>Welcome, please use the form to sign-in</h2>
           </div>
           <div class="p-col-12">
           <span class="p-float-label">
-            <InputText class="p-inputtext p-component" id="username" type="text" v-model="input.email" />
+            <InputText class="p-inputtext p-component" id="username" type="text" v-model="input.email" required />
             <label for="username">Username</label>
           </span>
           </div>
           <div class="p-col-12">
             <span class="p-float-label">
-              <InputText class="p-inputtext p-component" id="password" type="password" v-model="input.password" />
+              <InputText class="p-inputtext p-component" id="password" type="password" v-model="input.password" required />
               <label for="password">Password</label>
             </span>
           </div>
@@ -23,9 +23,9 @@
             <button class="p-link">Forget Password?</button>
           </div>
           <div class="p-col-6" style="text-align: right;">
-            <Button class="p-button p-component" type="button" label="Submit" style="width: 100%;" @click="submit" />
+            <Button class="p-button p-component" type="button" label="Submit" @click="submit" />
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

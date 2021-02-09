@@ -4,7 +4,7 @@
       <div class="login-panel-content">
         <form class="p-grid" v-on:submit.prevent="submit">
           <div class="p-col-12">
-            <h1>TIERAID NETWORK</h1>
+            <h1>{{ company.name }}</h1>
             <h2>Welcome, please use the form to sign-in</h2>
           </div>
           <div class="p-col-12">
@@ -41,10 +41,28 @@
         input: {
           email: '',
           password: ''
+        },
+        company: {
+          name: '',
+          description: ''
         }
       }
     },
+    created() {
+      this.getDataFromApi()
+    },
     methods: {
+      getDataFromApi() {
+        TokenService.fetch('/info/')
+          .then(response => {
+            const { name, description } = response;
+            this.company.name = name;
+            this.company.description = description;
+          })
+          .catch(error => {
+            console.log(error);
+          })
+      },
       async submit() {
         const token = await TokenService.fetch('/auth/', {
           method: 'POST',
@@ -72,6 +90,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .login-body h1 {
+    text-transform: uppercase;
   }
   .login-body .p-component {
     width: 100%;

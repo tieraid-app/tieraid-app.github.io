@@ -58,7 +58,6 @@
 
         if (access && refresh) {
           TokenService.setAuthenticated(access, refresh);
-          TokenService.startRefresh();
           this.$router.go();
         }
       }

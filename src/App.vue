@@ -16,7 +16,11 @@
         },
         computed: {
             isLoggedIn() {
-                return TokenService.isAuthenticated();
+                const isAuthenticated = TokenService.isAuthenticated();
+                if (isAuthenticated) {
+                    TokenService.startRefresh();
+                }
+                return isAuthenticated;
             }
         }
     }

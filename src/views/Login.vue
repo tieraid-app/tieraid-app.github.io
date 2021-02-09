@@ -59,7 +59,6 @@
         if (access && refresh) {
           TokenService.setAuthenticated(access, refresh);
           TokenService.startRefresh();
-          window.localStorage.setItem('logged-in', 'true');
           this.$router.go();
         }
       }

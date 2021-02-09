@@ -2,6 +2,7 @@ import {
     createRouter,
     createWebHashHistory
 } from 'vue-router'
+import TokenService from '../service/TokenService';
 
 const routes = [
     {
@@ -37,11 +38,11 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    if(!window.localStorage.getItem('logged-in') && to.name !== 'Login') {
+    if(!TokenService.isAuthenticated() && to.name !== 'Login') {
         router.push({ name: 'Login' })
     }
 
-    if (to.name === 'Login' && window.localStorage.getItem('logged-in') === 'true') {
+    if (to.name === 'Login' && TokenService.isAuthenticated()) {
         router.push({ name: 'Dashboard' })
     }
     next();

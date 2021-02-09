@@ -19,6 +19,8 @@
 </template>
 
 <script>
+	import TokenService from '../service/TokenService';
+
 	export default {
 		data() {
 			return {
@@ -28,7 +30,7 @@
 		methods: {
 			logout() {
 				console.log('logout')
-				window.localStorage.removeItem('logged-in');
+				TokenService.deleteToken();
 				this.$router.go();
 			},
 			onClick(event){

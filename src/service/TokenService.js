@@ -61,7 +61,7 @@ class Service {
     this.timerInterval = setInterval(() => {
       const refresh = this.getRefreshToken();
       if (refresh !== null) {
-        this.fetch('/api/token/refresh/', {
+        this.fetch('/auth/refresh/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

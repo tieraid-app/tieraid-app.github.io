@@ -46,7 +46,7 @@
     },
     methods: {
       async submit() {
-        const token = await TokenService.fetch('/api/token/', {
+        const token = await TokenService.fetch('/auth/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

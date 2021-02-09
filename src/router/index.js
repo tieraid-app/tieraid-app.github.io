@@ -1,29 +1,50 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import {
+    createRouter,
+    createWebHashHistory
+} from 'vue-router'
 
 const routes = [
-  {
-    path: '/',
-    name: 'Dashboard',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Dashboard.vue')
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Login.vue')
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    {
+        path: '/login',
+        name: 'Login',
+        component: () => import( /* webpackChunkName: "about" */ '../views/Login.vue')
+    },
+    {
+        path: '/',
+        name: 'Dashboard',
+        component: () => import( /* webpackChunkName: "about" */ '../views/Dashboard.vue'),
+        meta: {
+            requiresAuth: true
+        }
+    },
+    {
+        path: '/about',
+        name: 'About',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import( /* webpackChunkName: "about" */ '../views/About.vue'),
+        meta: {
+            requiresAuth: true
+        }
+    }
 ]
 
+
 const router = createRouter({
-  history: createWebHashHistory(process.env.BASE_URL),
-  routes
+    history: createWebHashHistory(process.env.BASE_URL),
+    routes
+})
+
+router.beforeEach((to, from, next) => {
+    if(!window.localStorage.getItem('logged-in') && to.name !== 'Login') {
+        router.push({ name: 'Login' })
+    }
+
+    if (to.name === 'Login' && window.localStorage.getItem('logged-in') === 'true') {
+        router.push({ name: 'Dashboard' })
+    }
+    next();
 })
 
 export default router

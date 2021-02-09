@@ -22,7 +22,7 @@
             <button class="p-link">Forget Password?</button>
           </div>
           <div class="p-col-6" style="text-align: right;">
-            <Button class="p-button p-component" type="button" label="Submit" style="width: 100%;" />
+            <Button class="p-button p-component" type="button" label="Submit" style="width: 100%;" @click="submit" />
           </div>
         </div>
       </div>
@@ -31,6 +31,14 @@
 </template>
 
 <script>
+    export default {
+        methods: {
+            submit(){
+                window.localStorage.setItem('logged-in', 'true');
+                this.$router.go();
+            }
+        }
+    }
 </script>
 
 <style lang="scss">

@@ -1,5 +1,12 @@
 module.exports = {
     devServer: {
-        disableHostCheck: true
+        disableHostCheck: true,
+        proxy: {
+            '^/auth': {
+                target: 'http://demo.tieraid.be:8000/',
+                ws: true,
+                changeOrigin: true
+            }
+        }
     }
 };

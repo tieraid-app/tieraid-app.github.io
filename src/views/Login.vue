@@ -67,7 +67,7 @@
 
 <style lang="scss">
   .login-body {
-    background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/08/Data-background.png");
+    background-image: url("../assets/images/background.webp");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;

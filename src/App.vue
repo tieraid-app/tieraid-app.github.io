@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!isLogin">
+    <div v-if="isLoggedIn">
         <AppMainMenu />
     </div>
     <router-view />
@@ -14,8 +14,8 @@
             AppMainMenu
         },
         computed: {
-            isLogin() {
-                return this.$route.name === 'Login';
+            isLoggedIn() {
+                return (window.localStorage.getItem('logged-in') && window.localStorage.getItem('logged-in') === 'true');
             }
         }
     }

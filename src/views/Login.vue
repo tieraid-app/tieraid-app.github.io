@@ -23,7 +23,7 @@
             <button class="p-link">Forget Password?</button>
           </div>
           <div class="p-col-6" style="text-align: right;">
-            <Button class="p-button p-component" type="button" label="Submit" @click="submit" />
+            <Button class="p-button p-component" type="submit" label="Submit" />
           </div>
         </form>
       </div>

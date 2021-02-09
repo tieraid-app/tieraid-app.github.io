@@ -8,6 +8,7 @@
 
 <script>
     import AppMainMenu from '@/components/AppMainMenu.vue';
+    import TokenService from './service/TokenService';
 
     export default {
         components: {
@@ -15,7 +16,7 @@
         },
         computed: {
             isLoggedIn() {
-                return (window.localStorage.getItem('logged-in') && window.localStorage.getItem('logged-in') === 'true');
+                return TokenService.isAuthenticated();
             }
         }
     }

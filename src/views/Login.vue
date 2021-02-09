@@ -4,17 +4,18 @@
       <div class="login-panel-content">
         <div class="p-grid">
           <div class="p-col-12">
-            <h1 data-v-2b48dc7c="">TIERAID NETWORK</h1>
-            <h2 data-v-2b48dc7c="">Welcome, please use the form to sign-in</h2>
-          </div><div class="p-col-12">
+            <h1>TIERAID NETWORK</h1>
+            <h2>Welcome, please use the form to sign-in</h2>
+          </div>
+          <div class="p-col-12">
           <span class="p-float-label">
-            <InputText class="p-inputtext p-component" id="username" type="text" style="width: 100%;" />
-            <label for="username" data-v-2b48dc7c="">Username</label>
+            <InputText class="p-inputtext p-component" id="username" type="text" v-model="input.email" />
+            <label for="username">Username</label>
           </span>
-        </div>
+          </div>
           <div class="p-col-12">
             <span class="p-float-label">
-              <InputText class="p-inputtext p-component" id="password" type="text" style="width: 100%;" />
+              <InputText class="p-inputtext p-component" id="password" type="password" v-model="input.password" />
               <label for="password">Password</label>
             </span>
           </div>
@@ -31,24 +32,52 @@
 </template>
 
 <script>
-    export default {
-        methods: {
-            submit(){
-                window.localStorage.setItem('logged-in', 'true');
-                this.$router.go();
-            }
+  import TokenService from '../service/TokenService';
+
+  export default {
+    name: 'Login',
+    data() {
+      return {
+        input: {
+          email: '',
+          password: ''
         }
+      }
+    },
+    methods: {
+      async submit() {
+        const token = await TokenService.fetch('/api/token/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(this.input)
+        });
+
+        const { access, refresh } = token;
+
+        if (access && refresh) {
+          TokenService.setAuthenticated(access, refresh);
+          TokenService.startRefresh();
+          window.localStorage.setItem('logged-in', 'true');
+          this.$router.go();
+        }
+      }
     }
+  }
 </script>
 
 <style lang="scss">
-    .login-body {
-        background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/08/Data-background.png");
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-    }
+  .login-body {
+    background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/08/Data-background.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-body .p-component {
+    width: 100%;
+  }
   .login-body .login-panel {
     width: 565px;
     height: 410px;

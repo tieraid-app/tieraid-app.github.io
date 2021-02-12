@@ -1,5 +1,5 @@
 <template>
-    <div v-if="isLoggedIn">
+    <div v-if="isAuthenticated">
         <AppMainMenu />
     </div>
     <router-view />
@@ -8,19 +8,14 @@
 
 <script>
     import AppMainMenu from '@/components/AppMainMenu.vue';
-    import TokenService from './service/TokenService';
 
     export default {
         components: {
             AppMainMenu
         },
         computed: {
-            isLoggedIn() {
-                const isAuthenticated = TokenService.isAuthenticated();
-                if (isAuthenticated) {
-                    TokenService.startRefresh();
-                }
-                return isAuthenticated;
+            isAuthenticated() {
+                return this.$store.getters['auth/isAuthenticated'] && this.$route.name !== 'Login';
             }
         }
     }

@@ -10,23 +10,28 @@ import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
-import '@/assets/layout/sass/_layout.scss'
-import router from './router'
-import store from './store'
+import '@/assets/layout/sass/_layout.scss';
+import router from '@/router';
+import store from '@/store';
+import interceptor from '@/services/interceptor';
 
-const app = createApp(App);
-
-app.use(store);
-app.use(router);
-
-app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
-app.config.globalProperties.$primevue = reactive({ ripple: true });
-
-app.directive('tooltip', Tooltip);
-app.directive('ripple', Ripple);
-
-app.component('Menu', Menu);
-app.component('InputText', InputText);
-app.component('Button', Button);
-
-app.mount('#app');
+store.dispatch('auth/fetchFromStorage').then(() => {
+    const app = createApp(App);
+    
+    interceptor()
+    
+    app.use(store);
+    app.use(router);
+    
+    app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
+    app.config.globalProperties.$primevue = reactive({ ripple: true });
+    
+    app.directive('tooltip', Tooltip);
+    app.directive('ripple', Ripple);
+    
+    app.component('Menu', Menu);
+    app.component('InputText', InputText);
+    app.component('Button', Button);
+    
+    app.mount('#app');
+});

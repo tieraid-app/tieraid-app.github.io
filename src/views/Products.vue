@@ -1,7 +1,8 @@
 <template>
-	<div class="p-grid crud-demo">
+	<div class="p-grid">
 		<div class="p-col-12">
 			<div class="card">
+                <h5>Products</h5>
 				<Toolbar class="p-mb-4">
 					<template v-slot:left>
 						<Button label="New" icon="pi pi-plus" class="p-button-success p-mr-2" @click="openNew" />

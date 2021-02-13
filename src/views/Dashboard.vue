@@ -1,6 +1,6 @@
 <template>
     <div>
-        LOOOL
+        Welcome Doggo Dog!
     </div>
 </template>
 

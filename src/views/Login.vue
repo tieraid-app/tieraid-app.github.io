@@ -54,9 +54,6 @@ export default {
         },
         };
     },
-    created() {
-        this.$store.dispatch("tenant/fetch");
-    },
     methods: {
         async submit() {
             this.$store.dispatch("auth/login", this.input).then(() => {

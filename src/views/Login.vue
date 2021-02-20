@@ -5,7 +5,7 @@
         <form class="p-grid" v-on:submit.prevent="submit">
           <div class="p-col-12">
             <h1>{{ company.name }}</h1>
-            <h2>Welcome, please use the form to sign-in</h2>
+            <h2>Welcome to tieraid!</h2>
           </div>
           <div class="p-col-12">
             <span class="p-float-label">

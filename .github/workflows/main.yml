@@ -28,6 +28,7 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+          yarn cname www.tieraid.app
 
       - name: Deploy to GitHub Pages
         if: success()

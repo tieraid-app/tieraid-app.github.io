@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss">
 .login-body {
-  background-image: url("../assets/images/background.webp");
+  background-image: url("../assets/images/background.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;

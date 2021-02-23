@@ -38,6 +38,7 @@
             <Button class="p-button p-component" type="submit" label="Submit" />
           </div>
         </form>
+        <Message v-for="error of errors" :severity="error" :key="error">{{error}}</Message>
       </div>
     </div>
   </div>
@@ -45,29 +46,32 @@
 
 <script>
 export default {
-    name: "Login",
-    data() {
-        return {
-        input: {
-            email: "",
-            password: "",
-        },
-        };
+  name: "Login",
+  data() {
+    return {
+      input: {
+        email: "",
+        password: "",
+      },
+    };
+  },
+  methods: {
+    async submit() {
+      this.$store
+        .dispatch("auth/login", this.input)
+        .then(() => {
+          this.$router.push({ name: "Dashboard" });
+        })
+        .catch(() => {
+          console.error("ERROR LOGIN");
+        });
     },
-    methods: {
-        async submit() {
-            this.$store.dispatch("auth/login", this.input).then(() => {
-                this.$router.push({ name: "Dashboard" });
-            }).catch(() => {
-                console.error("ERROR LOGIN");
-            });
-        },
+  },
+  computed: {
+    company() {
+      return this.$store.getters["tenant/get"];
     },
-    computed: {
-        company() {
-            return this.$store.getters["tenant/get"];
-        },
-    },
+  },
 };
 </script>
 
@@ -96,8 +100,8 @@ export default {
   margin-top: -232px;
   padding: 0;
   border-radius: 3px;
-  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 5px 22px 4px rgba(0, 0, 0, 0.12),
-    0 12px 17px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
 }
 .login-body .login-panel .login-panel-content {
   padding: 58px 98px;

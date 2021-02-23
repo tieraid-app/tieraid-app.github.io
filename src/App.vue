@@ -1,29 +1,29 @@
 <template>
-  <div
-    :class="containerClass"
-    @click="onWrapperClick"
-  >
-    <AppMenuBar />
-    <transition
-      v-if="isAuthenticated"
-      name="layout-sidebar layout-sidebar-dark"
+    <div
+        :class="containerClass"
+        @click="onWrapperClick"
     >
-      <div
-        v-show="isSidebarVisible"
-        :class="sidebarClass"
-        @click="onSidebarClick"
-      >
-        <AppProfile />
-        <AppMenu
-          :model="menu"
-          @menuitem-click="onMenuItemClick"
-        />
-      </div>
-    </transition>
-    <div :class="isAuthenticated ? 'layout-main' : ''">
-      <router-view />
+        <AppMenuBar />
+        <transition
+            v-if="isAuthenticated"
+            name="layout-sidebar layout-sidebar-dark"
+        >
+            <div
+                v-show="isSidebarVisible"
+                :class="sidebarClass"
+                @click="onSidebarClick"
+            >
+                <AppProfile />
+                <AppMenu
+                    :model="menu"
+                    @menuitem-click="onMenuItemClick"
+                />
+            </div>
+        </transition>
+        <div :class="isAuthenticated ? 'layout-main' : ''">
+            <router-view />
+        </div>
     </div>
-  </div>
 </template>
 
 

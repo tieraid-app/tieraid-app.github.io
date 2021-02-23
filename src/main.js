@@ -7,6 +7,7 @@ import "@/assets/layout/layout.scss";
 import { createApp, reactive } from "vue";
 
 import App from "./App.vue";
+import Avatar from 'primevue/avatar';
 import Button from "primevue/button";
 import Chip from "primevue/chip";
 import Column from "primevue/column";
@@ -42,6 +43,7 @@ store.dispatch("auth/fetchFromStorage").then(() => {
   app.directive("tooltip", Tooltip);
   app.directive("ripple", Ripple);
 
+  app.component("Avatar", Avatar);
   app.component("Menu", Menu);
   app.component("InputText", InputText);
   app.component("Button", Button);

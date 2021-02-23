@@ -1,4 +1,9 @@
 <template>
+  <Menubar :model="menuBarItems">
+    <template #start
+      ><div class="layout-logo">{{ company }}</div>
+    </template>
+  </Menubar>
   <div :class="containerClass" @click="onWrapperClick">
     <transition
       name="layout-sidebar layout-sidebar-dark"
@@ -9,8 +14,6 @@
         @click="onSidebarClick"
         v-show="isSidebarVisible"
       >
-        <div class="layout-logo">[{{ company }}]</div>
-
         <AppProfile />
         <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
       </div>
@@ -61,6 +64,7 @@ export default {
           ],
         },
       ],
+      menuBarItems: [],
     };
   },
   watch: {
@@ -187,7 +191,8 @@ body {
   color: #2c3e50;
 }
 
-.layout-logo {
-  color: white;
+.p-menubar {
+  height: 3em;
+  color: black;
 }
 </style>

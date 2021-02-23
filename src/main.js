@@ -17,6 +17,7 @@ import FileUpload from "primevue/fileupload";
 import InputNumber from "primevue/inputnumber";
 import InputText from "primevue/inputtext";
 import Menu from "primevue/menu";
+import Menubar from 'primevue/menubar';
 import Message from "primevue/message";
 import RadioButton from "primevue/radiobutton";
 import Rating from "primevue/rating";
@@ -45,6 +46,7 @@ store.dispatch("auth/fetchFromStorage").then(() => {
 
   app.component("Avatar", Avatar);
   app.component("Menu", Menu);
+  app.component("Menubar", Menubar)
   app.component("InputText", InputText);
   app.component("Button", Button);
   app.component("DataTable", DataTable);

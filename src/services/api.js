@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios from 'axios';
 
-axios.defaults.baseURL = "/";
-axios.defaults.headers.common["Content-Type"] = "application/json";
-axios.defaults.headers.common.Accept = "application/json";
+axios.defaults.baseURL = '/';
+axios.defaults.headers.common['Content-Type'] = 'application/json';
+axios.defaults.headers.common.Accept = 'application/json';
 
 const customRequest = (data) => {
   return axios(data)
@@ -15,13 +15,13 @@ const customRequest = (data) => {
 };
 
 export default {
-  get: (url) => customRequest({ method: "get", url }),
-  post: (url, data) => customRequest({ method: "post", url, data }),
-  put: (url, data) => customRequest({ method: "put", url, data }),
+  get: (url) => customRequest({ method: 'get', url }),
+  post: (url, data) => customRequest({ method: 'post', url, data }),
+  put: (url, data) => customRequest({ method: 'put', url, data }),
   delete: (url, data) => {
     if (!data) {
-      return customRequest({ method: "delete", url });
+      return customRequest({ method: 'delete', url });
     }
-    return customRequest({ method: "delete", url, data });
+    return customRequest({ method: 'delete', url, data });
   },
 };

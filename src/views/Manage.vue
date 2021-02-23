@@ -1,12 +1,12 @@
 <template>
-	<div class="p-grid">
-		<div class="p-col-12">
-			<div class="card">
-				<h5>Manage</h5>
-				<p>Manage things here..</p>
-			</div>
-		</div>
-	</div>
+  <div class="p-grid">
+    <div class="p-col-12">
+      <div class="card">
+        <h5>Manage</h5>
+        <p>Manage things here..</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

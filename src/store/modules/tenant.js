@@ -1,11 +1,11 @@
-import tenant from "@/services/resources/tenant";
+import tenant from '@/services/resources/tenant';
 
 export default {
   namespaced: true,
   state: {
     company: {
-      name: "",
-      description: "",
+      name: '',
+      description: '',
     },
   },
   getters: {
@@ -22,7 +22,7 @@ export default {
   actions: {
     fetch: async ({ commit }) => {
       return tenant.fetch().then(({ name, description }) => {
-        commit("SET_INFO", { name, description });
+        commit('SET_INFO', { name, description });
       });
     },
   },

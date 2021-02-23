@@ -2,7 +2,10 @@
   <div class="login-body">
     <div class="login-panel ui-fluid">
       <div class="login-panel-content">
-        <form class="p-grid" v-on:submit.prevent="submit">
+        <form
+          class="p-grid"
+          @submit.prevent="submit"
+        >
           <div class="p-col-12">
             <h1>{{ company.name }}</h1>
             <h2>Welcome to tieraid!</h2>
@@ -10,10 +13,10 @@
           <div class="p-col-12">
             <span class="p-float-label">
               <InputText
-                class="p-inputtext p-component"
                 id="username"
-                type="text"
                 v-model="input.email"
+                class="p-inputtext p-component"
+                type="text"
                 required
               />
               <label for="username">Username</label>
@@ -22,23 +25,41 @@
           <div class="p-col-12">
             <span class="p-float-label">
               <InputText
-                class="p-inputtext p-component"
                 id="password"
-                type="password"
                 v-model="input.password"
+                class="p-inputtext p-component"
+                type="password"
                 required
               />
               <label for="password">Password</label>
             </span>
           </div>
-          <div class="p-col-6" style="display: flex; align-items: center">
-            <button class="p-link">Forget Password?</button>
+          <div
+            class="p-col-6"
+            style="display: flex; align-items: center"
+          >
+            <button class="p-link">
+              Forget Password?
+            </button>
           </div>
-          <div class="p-col-6" style="text-align: right">
-            <Button class="p-button p-component" type="submit" label="Submit" />
+          <div
+            class="p-col-6"
+            style="text-align: right"
+          >
+            <Button
+              class="p-button p-component"
+              type="submit"
+              label="Submit"
+            />
           </div>
         </form>
-        <Message v-for="error of errors" :severity="error" :key="error">{{error}}</Message>
+        <Message
+          v-for="error of errors"
+          :key="error"
+          :severity="error"
+        >
+          {{ error }}
+        </Message>
       </div>
     </div>
   </div>
@@ -46,30 +67,30 @@
 
 <script>
 export default {
-  name: "Login",
+  name: 'Login',
   data() {
     return {
       input: {
-        email: "",
-        password: "",
+        email: '',
+        password: '',
       },
     };
+  },
+  computed: {
+    company() {
+      return this.$store.getters['tenant/get'];
+    },
   },
   methods: {
     async submit() {
       this.$store
-        .dispatch("auth/login", this.input)
+        .dispatch('auth/login', this.input)
         .then(() => {
-          this.$router.push({ name: "Dashboard" });
+          this.$router.push({ name: 'Dashboard' });
         })
         .catch(() => {
-          console.error("ERROR LOGIN");
+          console.error('ERROR LOGIN');
         });
-    },
-  },
-  computed: {
-    company() {
-      return this.$store.getters["tenant/get"];
     },
   },
 };

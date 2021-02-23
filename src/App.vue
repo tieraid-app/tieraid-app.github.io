@@ -1,17 +1,23 @@
 <template>
-  <div :class="containerClass" @click="onWrapperClick">
+  <div
+    :class="containerClass"
+    @click="onWrapperClick"
+  >
     <AppMenuBar />
     <transition
-      name="layout-sidebar layout-sidebar-dark"
       v-if="isAuthenticated"
+      name="layout-sidebar layout-sidebar-dark"
     >
       <div
+        v-show="isSidebarVisible"
         :class="sidebarClass"
         @click="onSidebarClick"
-        v-show="isSidebarVisible"
       >
         <AppProfile />
-        <AppMenu :model="menu" @menuitem-click="onMenuItemClick" />
+        <AppMenu
+          :model="menu"
+          @menuitem-click="onMenuItemClick"
+        />
       </div>
     </transition>
     <div :class="isAuthenticated ? 'layout-main' : ''">
@@ -22,9 +28,9 @@
 
 
 <script>
-import AppProfile from "@/components/AppProfile.vue";
-import AppMenu from "@/components/AppMenu.vue";
-import AppMenuBar from "@/components/AppMenuBar.vue";
+import AppProfile from '@/components/AppProfile.vue';
+import AppMenu from '@/components/AppMenu.vue';
+import AppMenuBar from '@/components/AppMenuBar.vue';
 
 export default {
   components: {
@@ -34,35 +40,83 @@ export default {
   },
   data() {
     return {
-      layoutMode: "static",
-      layoutColorMode: "dark",
+      layoutMode: 'static',
+      layoutColorMode: 'dark',
       staticMenuInactive: false,
       overlayMenuActive: false,
       mobileMenuActive: false,
       menu: [
         {
-          label: "Dashboard",
-          icon: "pi pi-fw pi-home",
-          to: "/",
+          label: 'Dashboard',
+          icon: 'pi pi-fw pi-home',
+          to: '/',
         },
         {
-          label: "Manage",
-          icon: "pi pi-fw pi-search",
+          label: 'Manage',
+          icon: 'pi pi-fw pi-search',
           items: [
             {
-              label: "Overview",
-              icon: "pi pi-fw pi-id-card",
-              to: "/manage/",
+              label: 'Overview',
+              icon: 'pi pi-fw pi-id-card',
+              to: '/manage/',
             },
             {
-              label: "Products",
-              icon: "pi pi-fw pi-id-card",
-              to: "/manage/products/",
+              label: 'Products',
+              icon: 'pi pi-fw pi-id-card',
+              to: '/manage/products/',
             },
           ],
         },
       ],
     };
+  },
+  computed: {
+    containerClass() {
+      return [
+        'layout-wrapper',
+        {
+          'layout-overlay': this.layoutMode === 'overlay',
+          'layout-static': this.layoutMode === 'static',
+          'layout-static-sidebar-inactive':
+            this.staticMenuInactive && this.layoutMode === 'static',
+          'layout-overlay-sidebar-active':
+            this.overlayMenuActive && this.layoutMode === 'overlay',
+          'layout-mobile-sidebar-active': this.mobileMenuActive,
+          'p-input-filled': this.$appState.inputStyle === 'filled',
+          'p-ripple-disabled': this.$primevue.ripple === false,
+        },
+      ];
+    },
+    sidebarClass() {
+      return [
+        'layout-sidebar',
+        {
+          'layout-sidebar-dark': this.layoutColorMode === 'dark',
+          'layout-sidebar-light': this.layoutColorMode === 'light',
+        },
+      ];
+    },
+    isDesktop() {
+      return window.innerWidth > 1024;
+    },
+    isSidebarVisible() {
+      if (this.isDesktop) {
+        if (this.layoutMode === 'static') return !this.staticMenuInactive;
+        else if (this.layoutMode === 'overlay') return this.overlayMenuActive;
+        else return true;
+      } else {
+        return true;
+      }
+    },
+    isAuthenticated() {
+      return (
+        this.$store.getters['auth/isAuthenticated'] &&
+        this.$route.name !== 'Login'
+      );
+    },
+    company() {
+      return this.$store.getters['tenant/get'].name;
+    },
   },
   watch: {
     $route() {
@@ -80,13 +134,13 @@ export default {
     onMenuToggle() {
       this.menuClick = true;
       if (this.isDesktop) {
-        if (this.layoutMode === "overlay") {
+        if (this.layoutMode === 'overlay') {
           if (this.mobileMenuActive === true) {
             this.overlayMenuActive = true;
           }
           this.overlayMenuActive = !this.overlayMenuActive;
           this.mobileMenuActive = false;
-        } else if (this.layoutMode === "static") {
+        } else if (this.layoutMode === 'static') {
           this.staticMenuInactive = !this.staticMenuInactive;
         }
       } else {
@@ -111,66 +165,18 @@ export default {
     },
     addClass(element, className) {
       if (element.classList) element.classList.add(className);
-      else element.className += " " + className;
+      else element.className += ' ' + className;
     },
     removeClass(element, className) {
       if (element.classList) element.classList.remove(className);
       else
         element.className = element.className.replace(
           new RegExp(
-            "(^|\\b)" + className.split(" ").join("|") + "(\\b|$)",
-            "gi"
+            '(^|\\b)' + className.split(' ').join('|') + '(\\b|$)',
+            'gi'
           ),
-          " "
+          ' '
         );
-    },
-  },
-  computed: {
-    containerClass() {
-      return [
-        "layout-wrapper",
-        {
-          "layout-overlay": this.layoutMode === "overlay",
-          "layout-static": this.layoutMode === "static",
-          "layout-static-sidebar-inactive":
-            this.staticMenuInactive && this.layoutMode === "static",
-          "layout-overlay-sidebar-active":
-            this.overlayMenuActive && this.layoutMode === "overlay",
-          "layout-mobile-sidebar-active": this.mobileMenuActive,
-          "p-input-filled": this.$appState.inputStyle === "filled",
-          "p-ripple-disabled": this.$primevue.ripple === false,
-        },
-      ];
-    },
-    sidebarClass() {
-      return [
-        "layout-sidebar",
-        {
-          "layout-sidebar-dark": this.layoutColorMode === "dark",
-          "layout-sidebar-light": this.layoutColorMode === "light",
-        },
-      ];
-    },
-    isDesktop() {
-      return window.innerWidth > 1024;
-    },
-    isSidebarVisible() {
-      if (this.isDesktop) {
-        if (this.layoutMode === "static") return !this.staticMenuInactive;
-        else if (this.layoutMode === "overlay") return this.overlayMenuActive;
-        else return true;
-      } else {
-        return true;
-      }
-    },
-    isAuthenticated() {
-      return (
-        this.$store.getters["auth/isAuthenticated"] &&
-        this.$route.name !== "Login"
-      );
-    },
-    company() {
-      return this.$store.getters["tenant/get"].name;
     },
   },
 };

@@ -13,9 +13,9 @@
         />
         <router-link
           v-if="item.to"
+          v-ripple
           :to="item.to"
           :class="[item.class, 'p-ripple',{'active-route': activeIndex === i, 'p-disabled': item.disabled}]"
-          v-ripple
           :style="item.style"
           :target="item.target"
           exact
@@ -74,46 +74,46 @@
 </template>
 <script>
 export default {
-	name: 'Appsubmenu',
-	props: {
-		items: Array,
-		root: {
-			type: Boolean,
-			default: false
-		}
-	},
-	data() {
-		return {
-			activeIndex : null
-		};
-	},
-	methods: {
-		onMenuItemClick(event, item, index) {
-			if (item.disabled) {
-				event.preventDefault();
-				return;
+    name: 'Appsubmenu',
+    props: {
+        items: Array,
+        root: {
+            type: Boolean,
+            default: false
+        }
+    },
+    data() {
+        return {
+            activeIndex : null
+        };
+    },
+    methods: {
+        onMenuItemClick(event, item, index) {
+            if (item.disabled) {
+                event.preventDefault();
+                return;
             }
 
             if (!item.to && !item.url) {
                 event.preventDefault();
             }
 
-			//execute command
-			if (item.command) {
+            //execute command
+            if (item.command) {
                 item.command({originalEvent: event, item: item});
-			}
+            }
 
-			this.activeIndex = index === this.activeIndex ? null : index;
+            this.activeIndex = index === this.activeIndex ? null : index;
 
-			this.$emit('menuitem-click', {
-				originalEvent: event,
-				item: item
-			});
-		},
-		visible(item) {
-			return (typeof item.visible === 'function' ? item.visible() : item.visible !== false);
-		}
-	}
+            this.$emit('menuitem-click', {
+                originalEvent: event,
+                item: item
+            });
+        },
+        visible(item) {
+            return (typeof item.visible === 'function' ? item.visible() : item.visible !== false);
+        }
+    }
 }
 </script>
 

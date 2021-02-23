@@ -47,21 +47,21 @@
 
 <script>
 export default {
-  data() {
-    return {
-      expanded: false,
-    };
-  },
-  methods: {
-    logout() {
-      this.$store.dispatch('auth/logout');
-      this.$router.go();
+    data() {
+        return {
+            expanded: false,
+        };
     },
-    onClick(event) {
-      this.expanded = !this.expanded;
-      event.preventDefault();
+    methods: {
+        logout() {
+            this.$store.dispatch('auth/logout');
+            this.$router.go();
+        },
+        onClick(event) {
+            this.expanded = !this.expanded;
+            event.preventDefault();
+        },
     },
-  },
 };
 </script>
 

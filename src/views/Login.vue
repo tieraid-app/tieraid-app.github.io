@@ -67,32 +67,32 @@
 
 <script>
 export default {
-  name: 'Login',
-  data() {
-    return {
-      input: {
-        email: '',
-        password: '',
-      },
-    };
-  },
-  computed: {
-    company() {
-      return this.$store.getters['tenant/get'];
+    name: 'Login',
+    data() {
+        return {
+            input: {
+                email: '',
+                password: '',
+            },
+        };
     },
-  },
-  methods: {
-    async submit() {
-      this.$store
-        .dispatch('auth/login', this.input)
-        .then(() => {
-          this.$router.push({ name: 'Dashboard' });
-        })
-        .catch(() => {
-          console.error('ERROR LOGIN');
-        });
+    computed: {
+        company() {
+            return this.$store.getters['tenant/get'];
+        },
     },
-  },
+    methods: {
+        async submit() {
+            this.$store
+                .dispatch('auth/login', this.input)
+                .then(() => {
+                    this.$router.push({ name: 'Dashboard' });
+                })
+                .catch(() => {
+                    console.error('ERROR LOGIN');
+                });
+        },
+    },
 };
 </script>
 

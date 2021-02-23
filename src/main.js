@@ -31,35 +31,35 @@ import store from '@/store';
 
 store.dispatch('tenant/fetch');
 store.dispatch('auth/fetchFromStorage').then(() => {
-  const app = createApp(App);
+    const app = createApp(App);
 
-  interceptor();
+    interceptor();
 
-  app.use(store);
-  app.use(router);
+    app.use(store);
+    app.use(router);
 
-  app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
-  app.config.globalProperties.$primevue = reactive({ ripple: true });
+    app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
+    app.config.globalProperties.$primevue = reactive({ ripple: true });
 
-  app.directive('tooltip', Tooltip);
-  app.directive('ripple', Ripple);
+    app.directive('tooltip', Tooltip);
+    app.directive('ripple', Ripple);
 
-  app.component('Avatar', Avatar);
-  app.component('Menu', Menu);
-  app.component('Menubar', Menubar)
-  app.component('InputText', InputText);
-  app.component('Button', Button);
-  app.component('DataTable', DataTable);
-  app.component('Column', Column);
-  app.component('Dialog', Dialog);
-  app.component('Textarea', Textarea);
-  app.component('Rating', Rating);
-  app.component('Toolbar', Toolbar);
-  app.component('FileUpload', FileUpload);
-  app.component('RadioButton', RadioButton);
-  app.component('InputNumber', InputNumber);
-  app.component('Chip', Chip);
-  app.component('Message', Message);
+    app.component('Avatar', Avatar);
+    app.component('Menu', Menu);
+    app.component('Menubar', Menubar)
+    app.component('InputText', InputText);
+    app.component('Button', Button);
+    app.component('DataTable', DataTable);
+    app.component('Column', Column);
+    app.component('Dialog', Dialog);
+    app.component('Textarea', Textarea);
+    app.component('Rating', Rating);
+    app.component('Toolbar', Toolbar);
+    app.component('FileUpload', FileUpload);
+    app.component('RadioButton', RadioButton);
+    app.component('InputNumber', InputNumber);
+    app.component('Chip', Chip);
+    app.component('Message', Message);
 
-  app.mount('#app');
+    app.mount('#app');
 });

@@ -7,6 +7,7 @@
         "plugin:vue/vue3-recommended"
     ],
     "rules": {
-        "quotes": [2, "single", { "avoidEscape": true }]
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "indent": ["error", 4]
     }
 }

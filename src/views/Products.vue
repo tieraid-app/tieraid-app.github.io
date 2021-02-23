@@ -303,17 +303,17 @@
 <script>
 
 export default {
-	data() {
-		return {
-			productDialog: false,
-			deleteProductDialog: false,
-			deleteProductsDialog: false,
-			product: {},
-			selectedProducts: null,
-			filters: {},
-			submitted: false
-		}
-	},
+    data() {
+        return {
+            productDialog: false,
+            deleteProductDialog: false,
+            deleteProductsDialog: false,
+            product: {},
+            selectedProducts: null,
+            filters: {},
+            submitted: false
+        }
+    },
     computed: {
         products() {
             return this.$store.getters['products/get'];
@@ -322,26 +322,26 @@ export default {
     created() {
         this.$store.dispatch('products/fetchAll');
     },
-	methods: {
-		formatCurrency(value) {
+    methods: {
+        formatCurrency(value) {
             return value;
-			// return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
-		},
-		openNew() {
-			this.product = {
+            // return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+        },
+        openNew() {
+            this.product = {
                 tags: ['NEW', 'COOL']
             };
-			this.submitted = false;
-			this.productDialog = true;
-		},
-		hideDialog() {
-			this.productDialog = false;
-			this.submitted = false;
-		},
-		saveProduct() {
-			this.submitted = true;
+            this.submitted = false;
+            this.productDialog = true;
+        },
+        hideDialog() {
+            this.productDialog = false;
+            this.submitted = false;
+        },
+        saveProduct() {
+            this.submitted = true;
 
-			if (this.product.name.trim()) {
+            if (this.product.name.trim()) {
                 if(this.product.id) {
                     this.$store.dispatch('products/update',  this.product);
                 } else {
@@ -349,56 +349,56 @@ export default {
                     // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Created', life: 3000});
                 }
 
-				this.productDialog = false;
-				this.product = {};
-			}
-		},
-		editProduct(product) {
+                this.productDialog = false;
+                this.product = {};
+            }
+        },
+        editProduct(product) {
             this.product = product;
-			this.productDialog = true;
-		},
-		confirmDeleteProduct(product) {
-			this.product = product;
-			this.deleteProductDialog = true;
-		},
-		deleteProduct() {
+            this.productDialog = true;
+        },
+        confirmDeleteProduct(product) {
+            this.product = product;
+            this.deleteProductDialog = true;
+        },
+        deleteProduct() {
             this.$store.dispatch('products/delete', { id: this.product.id });
-			this.deleteProductDialog = false;
-			this.product = {};
-			// this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
-		},
-		findIndexById(id) {
-			let index = -1;
-			for (let i = 0; i < this.products.length; i++) {
-				if (this.products[i].id === id) {
-					index = i;
-					break;
-				}
-			}
+            this.deleteProductDialog = false;
+            this.product = {};
+            // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
+        },
+        findIndexById(id) {
+            let index = -1;
+            for (let i = 0; i < this.products.length; i++) {
+                if (this.products[i].id === id) {
+                    index = i;
+                    break;
+                }
+            }
 
-			return index;
-		},
-		createId() {
-			let id = '';
-			var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-			for ( var i = 0; i < 5; i++ ) {
-				id += chars.charAt(Math.floor(Math.random() * chars.length));
-			}
-			return id;
-		},
-		exportCSV() {
-			this.$refs.dt.exportCSV();
-		},
-		confirmDeleteSelected() {
-			this.deleteProductsDialog = true;
-		},
-		deleteSelectedProducts() {
-			this.products = this.products.filter(val => !this.selectedProducts.includes(val));
-			this.deleteProductsDialog = false;
-			this.selectedProducts = null;
-			// this.$toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
-		}
-	}
+            return index;
+        },
+        createId() {
+            let id = '';
+            var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            for ( var i = 0; i < 5; i++ ) {
+                id += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return id;
+        },
+        exportCSV() {
+            this.$refs.dt.exportCSV();
+        },
+        confirmDeleteSelected() {
+            this.deleteProductsDialog = true;
+        },
+        deleteSelectedProducts() {
+            this.products = this.products.filter(val => !this.selectedProducts.includes(val));
+            this.deleteProductsDialog = false;
+            this.selectedProducts = null;
+            // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
+        }
+    }
 }
 </script>
 

@@ -1,8 +1,8 @@
 import api from '@/services/api';
 
 export default {
-  login: (data) => api.post('/auth/', data),
-  refresh: (data) => api.post('/auth/refresh/', data),
+    login: (data) => api.post('/auth/', data),
+    refresh: (data) => api.post('/auth/refresh/', data),
 };
 
 // class Service {

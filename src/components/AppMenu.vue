@@ -15,9 +15,9 @@ export default {
     components: {
         'AppSubmenu': AppSubmenu
     },
-	props: {
-		model: Array
-	},
+    props: {
+        model: Array
+    },
     methods: {
         onMenuItemClick(event) {
             this.$emit('menuitem-click', event);

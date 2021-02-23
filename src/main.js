@@ -7,6 +7,7 @@ import "@/assets/layout/layout.scss";
 import { createApp, reactive } from "vue";
 
 import App from "./App.vue";
+import Avatar from 'primevue/avatar';
 import Button from "primevue/button";
 import Chip from "primevue/chip";
 import Column from "primevue/column";
@@ -16,6 +17,7 @@ import FileUpload from "primevue/fileupload";
 import InputNumber from "primevue/inputnumber";
 import InputText from "primevue/inputtext";
 import Menu from "primevue/menu";
+import Menubar from 'primevue/menubar';
 import Message from "primevue/message";
 import RadioButton from "primevue/radiobutton";
 import Rating from "primevue/rating";
@@ -42,7 +44,9 @@ store.dispatch("auth/fetchFromStorage").then(() => {
   app.directive("tooltip", Tooltip);
   app.directive("ripple", Ripple);
 
+  app.component("Avatar", Avatar);
   app.component("Menu", Menu);
+  app.component("Menubar", Menubar)
   app.component("InputText", InputText);
   app.component("Button", Button);
   app.component("DataTable", DataTable);

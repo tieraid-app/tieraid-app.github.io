@@ -1,10 +1,6 @@
 <template>
-  <Menubar :model="menuBarItems">
-    <template #start
-      ><div class="layout-logo">{{ company }}</div>
-    </template>
-  </Menubar>
   <div :class="containerClass" @click="onWrapperClick">
+    <AppMenuBar />
     <transition
       name="layout-sidebar layout-sidebar-dark"
       v-if="isAuthenticated"
@@ -28,11 +24,13 @@
 <script>
 import AppProfile from "@/components/AppProfile.vue";
 import AppMenu from "@/components/AppMenu.vue";
+import AppMenuBar from "@/components/AppMenuBar.vue";
 
 export default {
   components: {
     AppMenu,
     AppProfile,
+    AppMenuBar,
   },
   data() {
     return {
@@ -64,7 +62,6 @@ export default {
           ],
         },
       ],
-      menuBarItems: [],
     };
   },
   watch: {

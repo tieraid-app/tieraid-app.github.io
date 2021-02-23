@@ -28,6 +28,7 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+          yarn cname www.tieraid.app
 
       - name: Deploy to GitHub Pages
         if: success()
@@ -37,3 +38,19 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  dispatch:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        repo: 
+          - tieraid-app/demo-tieraid-app.github.io
+    steps:
+      - name: Sync
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.sync_pat }}
+          repository: ${{ matrix.repo }}
+          event-type: sync

@@ -1,0 +1,12 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:vue/vue3-recommended"
+    ],
+    "rules": {
+        "quotes": [2, "single", { "avoidEscape": true }]
+    }
+}

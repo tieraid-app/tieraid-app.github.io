@@ -3,7 +3,7 @@
         :class="containerClass"
         @click="onWrapperClick"
     >
-        <AppMenuBar />
+        <AppMenuBar v-if="isAuthenticated" />
         <transition
             v-if="isAuthenticated"
             name="layout-sidebar layout-sidebar-dark"

@@ -1,6 +1,6 @@
 import auth from '@/store/modules/auth';
 import { createStore } from 'vuex'
-import currentUser from '@/store/modules/users/current_user';
+import currentUser from '@/store/modules/users/current';
 import products from '@/store/modules/products';
 import tenant from '@/store/modules/tenant';
 

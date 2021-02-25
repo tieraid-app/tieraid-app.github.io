@@ -1,11 +1,13 @@
-import { createStore } from 'vuex'
 import auth from '@/store/modules/auth';
-import tenant from '@/store/modules/tenant';
+import { createStore } from 'vuex'
+import currentUser from '@/store/modules/users/current_user';
 import products from '@/store/modules/products';
+import tenant from '@/store/modules/tenant';
 
 export default createStore({
     modules: {
         auth,
+        currentUser,
         tenant,
         products
     }

@@ -29,11 +29,12 @@ import interceptor from '@/services/interceptor';
 import router from '@/router';
 import store from '@/store';
 
+interceptor();
+
 store.dispatch('tenant/fetch');
+store.dispatch('currentUser/fetch');
 store.dispatch('auth/fetchFromStorage').then(() => {
     const app = createApp(App);
-
-    interceptor();
 
     app.use(store);
     app.use(router);

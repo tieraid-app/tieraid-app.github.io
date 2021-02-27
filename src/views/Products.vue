@@ -68,8 +68,8 @@
 
 
                     <Column
-                        selection-mode="multiple"
-                        header-style="width: 3rem"
+                        selectionMode="multiple"
+                        header-style="width: 1rem"
                     />
                     <Column
                         field="id"
@@ -344,6 +344,9 @@ export default {
     computed: {
         products() {
             return this.$store.getters['products/get'];
+        },
+        validForm() {
+            return this.product.name && this.product.brand && this.product.sku;
         }
     },
     created() {
@@ -371,8 +374,8 @@ export default {
         },
         saveProduct() {
             this.submitted = true;
+            if (this.validForm) {
 
-            if (this.product.name.trim()) {
                 if(this.product.id) {
                     this.$store.dispatch('products/update',  this.product);
                 } else {
@@ -424,7 +427,10 @@ export default {
             this.deleteProductsDialog = true;
         },
         deleteSelectedProducts() {
-            this.products = this.products.filter(val => !this.selectedProducts.includes(val));
+            this.selectedProducts.forEach((product) => {
+                this.$store.dispatch('products/delete', { id: product.id });
+            })
+
             this.deleteProductsDialog = false;
             this.selectedProducts = null;
             // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});

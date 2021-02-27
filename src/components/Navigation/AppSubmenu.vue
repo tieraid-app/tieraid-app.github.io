@@ -54,8 +54,9 @@
                         class="menuitem-badge"
                     >{{ item.badge }}</span>
                 </a> 
+
                 <transition name="layout-submenu-wrapper">
-                    <appsubmenu
+                    <AppSubmenu
                         v-show="activeIndex === i"
                         :items="visible(item) && item.items"
                         @menuitem-click="$emit('menuitem-click', $event)"
@@ -74,14 +75,18 @@
 </template>
 <script>
 export default {
-    name: 'Appsubmenu',
+    name: 'AppSubmenu',
     props: {
-        items: Array,
+        items: {
+            type: Array,
+            default: () => []
+        },
         root: {
             type: Boolean,
             default: false
         }
     },
+    emits: ['menuitem-click'],
     data() {
         return {
             activeIndex : null

@@ -28,9 +28,9 @@
 
 
 <script>
-import AppProfile from '@/components/AppProfile.vue';
-import AppMenu from '@/components/AppMenu.vue';
-import AppMenuBar from '@/components/AppMenuBar.vue';
+import AppProfile from '@/components/Navigation/AppProfile.vue';
+import AppMenu from '@/components/Navigation/AppMenu.vue';
+import AppMenuBar from '@/components/Navigation/AppMenuBar.vue';
 
 export default {
     components: {

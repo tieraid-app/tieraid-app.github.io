@@ -1,0 +1,19 @@
+:-webkit-autofill {
+    animation-name: onAutoFillStart;
+}
+
+:not(:-webkit-autofill) {
+    animation-name: onAutoFillCancel;
+}
+
+@keyframes onAutoFillStart {
+    from {}
+
+    to {}
+}
+
+@keyframes onAutoFillCancel {
+    from {}
+
+    to {}
+}

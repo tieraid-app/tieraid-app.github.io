@@ -90,7 +90,16 @@
                         field="tags"
                         header="Tags"
                         sortable
-                    />
+                    >
+                        <template #body="tableData">
+                            <Chip
+                                v-for="tag in tableData.data.tags"
+                                :key="tag"
+                                :label="tag"
+                                class="p-m-1"
+                            />
+                        </template>
+                    </Column>
 					
                     <Column>
                         <template #body="slotProps">
@@ -213,13 +222,7 @@
                     <div class="p-formgrid p-grid">
                         <div class="p-field p-col">
                             <label for="tags">Tags</label>
-                            <div class="p-col">
-                                <Chip
-                                    v-for="tag in product.tags"
-                                    :key="tag"
-                                    :label="tag"
-                                />
-                            </div>
+                            <Chips v-model="product.tags" />
                         </div>
                     </div>
                     <template #footer>
@@ -309,6 +312,7 @@ import DataTable from 'primevue/datatable/DataTable';
 import InputText from 'primevue/inputtext/InputText';
 import Column from 'primevue/column/Column';
 import RadioButton from 'primevue/radiobutton/RadioButton';
+import Chips from 'primevue/chips/Chips';
 import Chip from 'primevue/chip/Chip';
 import Textarea from 'primevue/textarea/Textarea';
 
@@ -323,6 +327,7 @@ export default {
         Column,
         RadioButton,
         Chip,
+        Chips,
         Textarea
     },
     data() {
@@ -351,7 +356,11 @@ export default {
         },
         openNew() {
             this.product = {
-                tags: ['NEW', 'COOL']
+                name: '',
+                description: '',
+                sku: '',
+                brand: '',
+                tags: ['NEW']
             };
             this.submitted = false;
             this.productDialog = true;

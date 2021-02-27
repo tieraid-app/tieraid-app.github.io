@@ -10,14 +10,15 @@
 </template>
 
 <script>
-import AppSubmenu from '@/components/AppSubmenu';
+import AppSubmenu from '@/components/Navigation/AppSubmenu';
 export default {
     components: {
         'AppSubmenu': AppSubmenu
     },
     props: {
-        model: Array
+        model: Array,
     },
+    emits: ['menuitem-click'],
     methods: {
         onMenuItemClick(event) {
             this.$emit('menuitem-click', event);

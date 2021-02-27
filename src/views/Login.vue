@@ -66,14 +66,24 @@
 </template>
 
 <script>
+import InputText from 'primevue/inputtext/InputText';
+import Button from 'primevue/button/Button';
+import Message from 'primevue/message/Message';
+
 export default {
     name: 'Login',
+    components: {
+        InputText,
+        Button,
+        Message
+    },
     data() {
         return {
             input: {
                 email: '',
                 password: '',
             },
+            errors: null
         };
     },
     computed: {
@@ -89,6 +99,7 @@ export default {
                     this.$router.push({ name: 'Dashboard' });
                 })
                 .catch(() => {
+                    
                     console.error('ERROR LOGIN');
                 });
         },

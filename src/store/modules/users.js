@@ -1,6 +1,4 @@
-import api from '@/services/api';
-
-const ENDPOINT = '/user/';
+import user from '@/services/resources/user';
 
 export default {
     namespaced: true,
@@ -19,7 +17,7 @@ export default {
     },
     actions: {
         fetch: async ({ commit }) => {
-            return api.get(ENDPOINT).then(user => {
+            return user.me().then(user => {
                 commit('SET_CURRENT_USER', user);
             });
         }

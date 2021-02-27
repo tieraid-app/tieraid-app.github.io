@@ -32,7 +32,12 @@
 </template>
 
 <script>
+import InputText from 'primevue/inputtext/InputText';
+
 export default {
+    components: {
+        InputText
+    },
     methods: {
         onMenuToggle(event) {
             this.$emit('menu-toggle', event);

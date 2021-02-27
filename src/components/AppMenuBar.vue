@@ -20,3 +20,25 @@
         </template>
     </Menubar>
 </template>
+
+<script>
+import Avatar from 'primevue/avatar/Avatar';
+import Menubar from 'primevue/menubar/Menubar';
+
+export default {
+    components: {
+        Avatar,
+        Menubar
+    },
+    props: {
+        menuBarItems: {
+            type: Object,
+            default: null
+        },
+        company: {
+            type: String,
+            default: ''
+        }
+    }
+}
+</script>

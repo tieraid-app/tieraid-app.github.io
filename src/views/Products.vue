@@ -301,8 +301,30 @@
 </template>
 
 <script>
+import Button from 'primevue/button/Button';
+import Dialog from 'primevue/dialog/Dialog';
+import Toolbar from 'primevue/toolbar/Toolbar';
+import FileUpload from 'primevue/fileupload/FileUpload';
+import DataTable from 'primevue/datatable/DataTable';
+import InputText from 'primevue/inputtext/InputText';
+import Column from 'primevue/column/Column';
+import RadioButton from 'primevue/radiobutton/RadioButton';
+import Chip from 'primevue/chip/Chip';
+import Textarea from 'primevue/textarea/Textarea';
 
 export default {
+    components: {
+        Button,
+        Dialog,
+        Toolbar,
+        FileUpload,
+        DataTable,
+        InputText,
+        Column,
+        RadioButton,
+        Chip,
+        Textarea
+    },
     data() {
         return {
             productDialog: false,

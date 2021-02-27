@@ -46,7 +46,12 @@
 </template>
 
 <script>
+import Avatar from 'primevue/avatar/Avatar';
+
 export default {
+    components: {
+        Avatar
+    },
     data() {
         return {
             expanded: false,

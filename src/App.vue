@@ -111,7 +111,7 @@ export default {
         isAuthenticated() {
             return (
                 this.$store.getters['auth/isAuthenticated'] &&
-        this.$route.name !== 'Login'
+                this.$route.name !== 'Login'
             );
         },
         company() {

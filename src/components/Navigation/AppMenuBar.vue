@@ -1,8 +1,6 @@
 <template>
     <Menubar :model="menuBarItems">
-        <template
-            #start
-        >
+        <template #start>
             <div class="layout-logo">
                 {{ company }}
             </div>
@@ -30,15 +28,16 @@ export default {
         Avatar,
         Menubar
     },
+    computed: {
+        company() {
+            return this.$store.getters['tenant/get'].name;
+        },
+    },
     props: {
         menuBarItems: {
             type: Object,
             default: null
         },
-        company: {
-            type: String,
-            default: ''
-        }
     }
-}
+};
 </script>

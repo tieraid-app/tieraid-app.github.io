@@ -68,7 +68,7 @@
 
 
                     <Column
-                        selectionMode="multiple"
+                        selection-mode="multiple"
                         header-style="width: 1rem"
                     />
                     <Column

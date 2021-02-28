@@ -15,14 +15,21 @@ import store from '@/store';
 
 interceptor();
 
-store.dispatch('tenant/fetch');
 store.dispatch('auth/fetchFromStorage').then(() => {
+    store.dispatch('tenant/fetch');
+
+    if (store.getters['auth/isAuthenticated']) {
+        store.dispatch('users/fetchCurrentUser');
+    }
+
     const app = createApp(App);
 
     app.use(store);
     app.use(router);
 
-    app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
+    app.config.globalProperties.$appState = reactive({
+        inputStyle: 'outlined'
+    });
     app.config.globalProperties.$primevue = reactive({ ripple: true });
 
     app.directive('tooltip', Tooltip);

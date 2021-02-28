@@ -1,25 +1,30 @@
 import auth from '@/services/resources/auth';
+import jwt_decode from 'jwt-decode';
 
 export default {
     namespaced: true,
     state: {
-        accessToken: null,
-        refreshToken: null,
+        access: null,
+        refresh: null,
         isAuthenticated: false,
-        refreshTokenInterval: null,
+        refreshTokenInterval: null
     },
     mutations: {
-        SET_AUTH: (state, { accessToken, refreshToken, isAuthenticated }) => {
-            (state.accessToken = accessToken || state.accessToken),
-            (state.refreshToken = refreshToken || state.refreshToken),
-            (state.isAuthenticated = isAuthenticated || state.isAuthenticated);
+        SET_AUTH: (state, { access, refresh }) => {
+            state.access = access;
+            state.refresh = refresh;
+            state.isAuthenticated = true;
 
             window.sessionStorage.setItem(
                 'tokens',
-                JSON.stringify({ ...state, refreshTokenInterval: null })
+                JSON.stringify({
+                    ...state,
+                    isAuthenticated: false,
+                    refreshTokenInterval: null
+                })
             );
         },
-        CLEAR_AUTH: (state) => {
+        CLEAR_AUTH: state => {
             clearInterval(state.refreshTokenInterval);
             state.refreshTokenInterval = null;
             window.sessionStorage.removeItem('tokens');
@@ -28,23 +33,18 @@ export default {
             if (!state.refreshTokenInterval) {
                 state.refreshTokenInterval = setInterval(func, 1000 * 60 * 4);
             }
-        },
+        }
     },
     actions: {
         login: ({ commit, dispatch }, { email, password }) => {
             return auth
                 .login({ email, password })
-                .then(({ access, refresh }) => {
-                    commit('SET_AUTH', {
-                        accessToken: access,
-                        refreshToken: refresh,
-                        isAuthenticated: true,
-                    });
+                .then(data => {
+                    commit('SET_AUTH', data);
 
                     dispatch('startScheduleRefreshToken');
-                    return;
                 })
-                .catch((err) => {
+                .catch(err => {
                     commit('CLEAR_AUTH');
                     console.error(err);
                 });
@@ -55,42 +55,66 @@ export default {
         startScheduleRefreshToken: ({ commit, getters }) => {
             commit('SET_REFRESH_TOKEN_INTERVAL', {
                 func: () => {
-                    console.log('SET INTERVAL');
                     const refresh = getters['getRefreshToken'];
-                    if (refresh !== null) {
-                        auth.refresh({ refresh }).then((tokens) => {
-                            console.log(tokens);
-                            commit('SET_AUTH', { accessToken: tokens.access });
-                        });
+
+                    if (refresh) {
+                        auth.refresh({ refresh })
+                            .then(tokens => {
+                                commit('SET_AUTH', { refresh, ...tokens });
+                            })
+                            .catch(err => {
+                                // Failed to refresh token
+                                commit('CLEAR_AUTH');
+                            });
                     } else {
                         commit('CLEAR_AUTH');
                     }
-                },
+                }
             });
         },
         fetchFromStorage({ commit, dispatch }) {
             try {
-                const tokens = JSON.parse(window.sessionStorage.getItem('tokens'));
+                const tokens = JSON.parse(
+                    window.sessionStorage.getItem('tokens')
+                );
 
                 if (tokens) {
-                    commit('SET_AUTH', { ...tokens });
-                    dispatch('startScheduleRefreshToken');
+                    /**
+                     * In this state we should refresh our token so that we new it is fresh
+                     */
+                    return new Promise((resolve) => {
+                        const { refresh } = tokens;
+
+                        auth.refresh({ refresh })
+                            .then(data => {
+                                commit('SET_AUTH', { ...data, refresh });
+
+                                dispatch('startScheduleRefreshToken');
+
+                                resolve();
+                            })
+                            .catch(err => {
+                                // Failed to refresh token
+                                commit('CLEAR_AUTH');
+
+                                resolve();
+                            });
+                    });
                 }
-                return tokens;
             } catch {
                 commit('CLEAR_AUTH');
             }
-        },
+        }
     },
     getters: {
-        isAuthenticated: (state) => {
+        isAuthenticated: state => {
             return state.isAuthenticated;
         },
-        getAccessToken: (state) => {
-            return state.accessToken;
+        getAccessToken: state => {
+            return state.access;
         },
-        getRefreshToken: (state) => {
-            return state.refreshToken;
-        },
-    },
+        getRefreshToken: state => {
+            return state.refresh;
+        }
+    }
 };

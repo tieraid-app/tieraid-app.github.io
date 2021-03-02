@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import Avatar from 'primevue/avatar/Avatar';
+import Avatar from 'primevue/avatar';
 
 export default {
     components: {

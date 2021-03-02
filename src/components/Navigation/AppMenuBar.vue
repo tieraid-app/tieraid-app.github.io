@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import Avatar from 'primevue/avatar/Avatar';
-import Menubar from 'primevue/menubar/Menubar';
+import Avatar from 'primevue/avatar';
+import Menubar from 'primevue/menubar';
 
 export default {
     components: {

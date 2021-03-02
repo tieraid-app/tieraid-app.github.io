@@ -304,17 +304,17 @@
 </template>
 
 <script>
-import Button from 'primevue/button/Button';
-import Dialog from 'primevue/dialog/Dialog';
-import Toolbar from 'primevue/toolbar/Toolbar';
-import FileUpload from 'primevue/fileupload/FileUpload';
-import DataTable from 'primevue/datatable/DataTable';
-import InputText from 'primevue/inputtext/InputText';
-import Column from 'primevue/column/Column';
-import RadioButton from 'primevue/radiobutton/RadioButton';
-import Chips from 'primevue/chips/Chips';
-import Chip from 'primevue/chip/Chip';
-import Textarea from 'primevue/textarea/Textarea';
+import Button from 'primevue/button';
+import Dialog from 'primevue/dialog';
+import Toolbar from 'primevue/toolbar';
+import FileUpload from 'primevue/fileupload';
+import DataTable from 'primevue/datatable';
+import InputText from 'primevue/inputtext';
+import Column from 'primevue/column';
+import RadioButton from 'primevue/radiobutton';
+import Chips from 'primevue/chips';
+import Chip from 'primevue/chip';
+import Textarea from 'primevue/textarea';
 
 export default {
     components: {

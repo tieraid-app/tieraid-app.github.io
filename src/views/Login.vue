@@ -66,9 +66,9 @@
 </template>
 
 <script>
-import InputText from 'primevue/inputtext/InputText';
-import Button from 'primevue/button/Button';
-import Message from 'primevue/message/Message';
+import InputText from 'primevue/inputtext';
+import Button from 'primevue/button';
+import Message from 'primevue/message';
 
 export default {
     name: 'Login',

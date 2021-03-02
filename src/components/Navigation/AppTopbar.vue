@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import InputText from 'primevue/inputtext/InputText';
+import InputText from 'primevue/inputtext';
 
 export default {
     components: {

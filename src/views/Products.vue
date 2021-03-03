@@ -152,6 +152,7 @@
                             required="true"
                             rows="3"
                             cols="20"
+                            :class="{'p-invalid': submitted && !product.description}"
                         />
                     </div>
 
@@ -346,7 +347,7 @@ export default {
             return this.$store.getters['products/get'];
         },
         validForm() {
-            return this.product.name && this.product.brand && this.product.sku;
+            return this.product.name && this.product.brand && this.product.sku && this.product.description;
         }
     },
     created() {

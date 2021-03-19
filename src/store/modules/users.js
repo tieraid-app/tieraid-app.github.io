@@ -3,7 +3,10 @@ import user from '@/services/resources/user';
 export default {
     namespaced: true,
     state: {
-        currentUser: {}
+        currentUser: {
+            first_name: '',
+            last_name: ''
+        }
     },
     getters: {
         current: state => {

@@ -1,18 +1,15 @@
 <template>
-    <div
-        :class="containerClass"
-        @click="onWrapperClick"
-    >
-        <AppMenuBar v-if="isAuthenticated" />
+    <div :class="containerClass" @click="onWrapperClick">
         <transition
             v-if="isAuthenticated"
-            name="layout-sidebar layout-sidebar-dark"
+            name="layout-sidebar"
         >
             <div
                 v-show="isSidebarVisible"
                 :class="sidebarClass"
                 @click="onSidebarClick"
             >
+                <AppCompany />
                 <AppProfile />
                 <AppMenu
                     :model="menu"
@@ -20,6 +17,7 @@
                 />
             </div>
         </transition>
+        <AppMenuBar v-if="isAuthenticated" />
         <div :class="isAuthenticated ? 'layout-main' : ''">
             <router-view />
         </div>
@@ -28,12 +26,14 @@
 
 
 <script>
+import AppCompany from '@/components/Navigation/AppCompany.vue';
 import AppProfile from '@/components/Navigation/AppProfile.vue';
 import AppMenu from '@/components/Navigation/AppMenu.vue';
 import AppMenuBar from '@/components/Navigation/AppMenuBar.vue';
 
 export default {
     components: {
+        AppCompany,
         AppMenu,
         AppProfile,
         AppMenuBar,
@@ -41,7 +41,7 @@ export default {
     data() {
         return {
             layoutMode: 'static',
-            layoutColorMode: 'dark',
+            layoutColorMode: 'light',
             staticMenuInactive: false,
             overlayMenuActive: false,
             mobileMenuActive: false,

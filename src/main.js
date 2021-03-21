@@ -3,6 +3,7 @@ import 'primevue/resources/primevue.min.css';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
 import '@/assets/layout/layout.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { createApp, reactive } from 'vue';
 

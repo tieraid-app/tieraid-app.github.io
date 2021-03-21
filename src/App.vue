@@ -1,15 +1,15 @@
 <template>
     <div :class="containerClass" @click="onWrapperClick">
-        <transition
-            v-if="isAuthenticated"
+        <AppTopBar @menu-toggle="onMenuToggle" />
+        <transition 
             name="layout-sidebar"
+            v-if="isAuthenticated"
         >
             <div
                 v-show="isSidebarVisible"
                 :class="sidebarClass"
                 @click="onSidebarClick"
             >
-                <AppCompany />
                 <AppProfile />
                 <AppMenu
                     :model="menu"
@@ -17,26 +17,30 @@
                 />
             </div>
         </transition>
-        <AppMenuBar v-if="isAuthenticated" />
+        
         <div :class="isAuthenticated ? 'layout-main' : ''">
             <router-view />
         </div>
+        <AppMenuBar v-if="isAuthenticated" />
+
+        <AppConfig :layoutMode="layoutMode" :layoutColorMode="layoutColorMode" @layout-change="onLayoutChange" @layout-color-change="onLayoutColorChange"/>
+
     </div>
 </template>
 
 
 <script>
-import AppCompany from '@/components/Navigation/AppCompany.vue';
 import AppProfile from '@/components/Navigation/AppProfile.vue';
 import AppMenu from '@/components/Navigation/AppMenu.vue';
 import AppMenuBar from '@/components/Navigation/AppMenuBar.vue';
+import AppTopBar from '@/components/Navigation/AppTopBar.vue';
 
 export default {
     components: {
-        AppCompany,
         AppMenu,
         AppProfile,
         AppMenuBar,
+        AppTopBar
     },
     data() {
         return {
@@ -48,7 +52,7 @@ export default {
             menu: [
                 {
                     label: 'Dashboard',
-                    icon: 'pi pi-fw pi-home',
+                    icon: 'fas fa-th-large',
                     to: '/',
                 },
                 {

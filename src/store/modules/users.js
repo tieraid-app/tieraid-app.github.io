@@ -1,26 +1,26 @@
-import user from '@/services/resources/user';
+import users from '@/services/resources/users';
 
 export default {
     namespaced: true,
     state: {
-        currentUser: {
+        me: {
             first_name: '',
             last_name: ''
         }
     },
     getters: {
         current: state => {
-            return state.currentUser;
+            return state.me;
         }
     },
     mutations: {
         SET_CURRENT_USER: (state, user) => {
-            state.currentUser = user;
+            state.me = user;
         }
     },
     actions: {
-        fetchCurrentUser: async ({ commit }) => {
-            return user.me().then(user => {
+        fetchMe: async ({ commit }) => {
+            return users.me().then(user => {
                 commit('SET_CURRENT_USER', user);
             });
         }

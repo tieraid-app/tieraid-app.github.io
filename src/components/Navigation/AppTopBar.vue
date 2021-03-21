@@ -4,7 +4,7 @@
             class="p-link layout-menu-button" 
             @click="onMenuToggle"
         >
-            <i class="fas fa-bars">MENU</i>
+            <i class="fas fa-bars"></i>
         </button>
     </div>
 </template>

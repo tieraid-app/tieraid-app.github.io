@@ -20,7 +20,7 @@ store.dispatch('auth/fetchFromStorage').then(() => {
     store.dispatch('tenant/fetch');
 
     if (store.getters['auth/isAuthenticated']) {
-        store.dispatch('users/fetchCurrentUser');
+        store.dispatch('users/fetchMe');
     }
 
     const app = createApp(App);

@@ -21,10 +21,6 @@
         <div :class="isAuthenticated ? 'layout-main' : ''">
             <router-view />
         </div>
-        <AppMenuBar v-if="isAuthenticated" />
-
-        <AppConfig :layoutMode="layoutMode" :layoutColorMode="layoutColorMode" @layout-change="onLayoutChange" @layout-color-change="onLayoutColorChange"/>
-
     </div>
 </template>
 
@@ -32,14 +28,12 @@
 <script>
 import AppProfile from '@/components/Navigation/AppProfile.vue';
 import AppMenu from '@/components/Navigation/AppMenu.vue';
-import AppMenuBar from '@/components/Navigation/AppMenuBar.vue';
 import AppTopBar from '@/components/Navigation/AppTopBar.vue';
 
 export default {
     components: {
         AppMenu,
         AppProfile,
-        AppMenuBar,
         AppTopBar
     },
     data() {
@@ -56,6 +50,11 @@ export default {
                     to: '/',
                 },
                 {
+                    label: 'Products',
+                    icon: 'pi pi-fw pi-id-card',
+                    to: '/manage/products/',
+                },
+                {
                     label: 'Manage',
                     icon: 'pi pi-fw pi-search',
                     items: [
@@ -63,11 +62,6 @@ export default {
                             label: 'Overview',
                             icon: 'pi pi-fw pi-id-card',
                             to: '/manage/',
-                        },
-                        {
-                            label: 'Products',
-                            icon: 'pi pi-fw pi-id-card',
-                            to: '/manage/products/',
                         },
                     ],
                 },
@@ -191,15 +185,11 @@ body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-.p-menubar {
-  height: 3em;
-  color: black;
-}
 </style>

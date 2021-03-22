@@ -23,6 +23,11 @@ export default {
             return users.me().then(user => {
                 commit('SET_CURRENT_USER', user);
             });
+        },
+        update: ({ commit }, payload) => {
+            users.update(payload.id, { ...payload }).then((user) => {
+                commit('SET_CURRENT_USER', user);
+            })
         }
     }
 };

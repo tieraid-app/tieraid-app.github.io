@@ -41,8 +41,8 @@ export default {
             layoutMode: 'static',
             layoutColorMode: 'light',
             staticMenuInactive: false,
-            overlayMenuActive: false,
-            mobileMenuActive: false,
+            overlayMenuActive: true,
+            mobileMenuActive: true,
             menu: [
                 {
                     label: 'Dashboard',
@@ -131,6 +131,7 @@ export default {
         },
         onMenuToggle() {
             this.menuClick = true;
+            console.log(this.isDesktop);
             if (this.isDesktop) {
                 if (this.layoutMode === 'overlay') {
                     if (this.mobileMenuActive === true) {

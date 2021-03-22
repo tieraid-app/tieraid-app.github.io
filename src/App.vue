@@ -55,6 +55,11 @@ export default {
                     to: '/manage/products/',
                 },
                 {
+                    label: 'Settings',
+                    icon: 'fas fa-cog',
+                    to: '/settings/',
+                },
+                {
                     label: 'Manage',
                     icon: 'pi pi-fw pi-search',
                     items: [

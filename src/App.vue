@@ -51,7 +51,7 @@ export default {
                 },
                 {
                     label: 'Products',
-                    icon: 'pi pi-fw pi-id-card',
+                    icon: 'far fa-folder',
                     to: '/manage/products/',
                 },
                 {

@@ -24,7 +24,9 @@
                         <label for="zip">Zip</label>
                         <InputText id="zip" type="text"/>
                     </div>
-                    <Button label="Submit"></Button>
+                    <div class="p-field p-col-12">
+                        <Button label="Submit"></Button>
+                    </div>
                 </div>
             </div>
         </div>

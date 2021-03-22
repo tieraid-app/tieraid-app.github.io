@@ -16,7 +16,8 @@
                                 id="username"
                                 v-model="input.email"
                                 class="p-inputtext p-component"
-                                type="text"
+                                type="email"
+                                pattern="^(?![\.\-_])((?![\-\._][\-\._])[a-z0-9\-\._]){0,63}[a-z0-9]@(?![\-])((?!--)[a-z0-9\-]){0,63}[a-z0-9]\.(|((?![\-])((?!--)[a-z0-9\-]){0,63}[a-z0-9]\.))(|([a-z]{2,14}\.))[a-z]{2,14}$"
                                 required
                             />
                             <label for="username">Username</label>
@@ -56,9 +57,9 @@
                 <Message
                     v-for="error of errors"
                     :key="error"
-                    :severity="error"
+                    :severity="error.severity"
                 >
-                    {{ error }}
+                    {{ error.content }}
                 </Message>
             </div>
         </div>
@@ -89,18 +90,18 @@ export default {
     computed: {
         company() {
             return this.$store.getters['tenant/get'];
-        },
+        }
     },
     methods: {
         async submit() {
+            this.errors = null;
             this.$store
                 .dispatch('auth/login', this.input)
                 .then(() => {
                     this.$router.push({ name: 'Dashboard' });
                 })
                 .catch(() => {
-                    
-                    console.error('ERROR LOGIN');
+                    this.errors = [{severity: 'error', content: 'You have entered an invalid username or password'}];
                 });
         },
     },

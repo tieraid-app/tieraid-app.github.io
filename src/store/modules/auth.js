@@ -46,7 +46,7 @@ export default {
                 })
                 .catch(err => {
                     commit('CLEAR_AUTH');
-                    console.error(err);
+                    throw (err);
                 });
         },
         logout: ({ commit }) => {

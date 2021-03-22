@@ -19,6 +19,14 @@ const routes = [
         }
     },
     { 
+        path: '/account',
+        name: 'Account',
+        component: () => import( /* webpackChunkName: "manage" */ '../views/Account.vue'),
+        meta: {
+            requiresAuth: true
+        }  
+    },
+    { 
         path: '/manage/',
         component: () => import( /* webpackChunkName: "manage" */ '../views/Manage.vue'),
         meta: {

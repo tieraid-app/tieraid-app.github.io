@@ -22,7 +22,7 @@
             <transition name="layout-submenu-wrapper">
                 <ul v-show="expanded">
                     <li>
-                        <button class="p-link">
+                        <button class="p-link" @click="() => goTo('Account')">
                             <i class="pi pi-fw pi-user" /><span>Account</span>
                         </button>
                     </li>
@@ -49,6 +49,7 @@
 
 <script>
 import Avatar from 'primevue/avatar';
+import router from '../../router';
 
 export default {
     components: {
@@ -67,6 +68,9 @@ export default {
         }
     },
     methods: {
+        goTo(name) {
+            router.push({ name })
+        },
         logout() {
             this.$store.dispatch('auth/logout');
             this.$router.go();

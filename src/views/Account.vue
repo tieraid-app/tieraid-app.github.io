@@ -21,9 +21,11 @@
             <form
                 @submit.prevent="submit"
             >
-                <div class="p-col-12">
-                    <div class="card">
-                        <h5>Account</h5>
+                <Card>
+                    <template #title>
+                        <h5>Profile information</h5>
+                    </template>
+                    <template #content>
                         <div class="p-fluid p-formgrid p-grid">
                             <div class="p-field p-col-12 p-md-6">
                                 <label for="firstname">Firstname</label>
@@ -59,8 +61,8 @@
                                 />
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </template>
+                </Card>
             </form>
         </div>
     </div>

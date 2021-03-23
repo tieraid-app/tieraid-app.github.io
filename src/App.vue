@@ -54,30 +54,40 @@ export default {
                 },
                 
                 {
-                    label: 'Order',
+                    label: 'Buy',
                     icon: 'fas fa-store',
                     to: '/manage/products/',
                 },
                 {
-                    label: 'Manage',
+                    label: 'Sell',
                     icon: 'fas fa-tasks',
                     items: [
                         {
-                            label: 'Incoming orders',
-                            icon: 'far fa-caret-square-right',
+                            label: 'Orders',
+                            icon: 'fas fa-shopping-basket',
                             to: '/settings/',
                         },
                         {
-                            label: 'Products',
-                            icon: 'far fa-folder',
+                            label: 'Catalog',
+                            icon: 'fas fa-store-alt',
                             to: '/manage/products/',
                         },
                         {
-                            label: 'Agreements',
+                            label: 'Customers',
                             icon: 'far fa-handshake',
                             to: '/settings/',
                         },
+                        {
+                            label: 'Stats',
+                            icon: 'far fa-chart-bar',
+                            to: '/settings/',
+                        },
                     ],
+                },
+                {
+                    label: 'Feedback',
+                    icon: 'far fa-comment-dots',
+                    to: '/settings/',
                 },
                 {
                     label: 'Settings',

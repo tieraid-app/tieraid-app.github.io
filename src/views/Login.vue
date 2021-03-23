@@ -99,6 +99,7 @@ export default {
                 .dispatch('auth/login', this.input)
                 .then(() => {
                     this.$router.push({ name: 'Dashboard' });
+                    this.$store.dispatch('users/fetchMe');
                 })
                 .catch(() => {
                     this.errors = [{severity: 'error', content: 'You have entered an invalid username or password'}];

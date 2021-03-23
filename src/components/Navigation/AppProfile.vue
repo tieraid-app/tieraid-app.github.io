@@ -22,7 +22,10 @@
             <transition name="layout-submenu-wrapper">
                 <ul v-show="expanded">
                     <li>
-                        <button class="p-link" @click="() => goTo('Account')">
+                        <button
+                            class="p-link"
+                            @click="() => goTo('Account')"
+                        >
                             <i class="pi pi-fw pi-user" /><span>Account</span>
                         </button>
                     </li>

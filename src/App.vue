@@ -21,6 +21,9 @@
         <div :class="isAuthenticated ? 'layout-main' : ''">
             <router-view />
         </div>
+        <div class="layout-footer">
+            Powered by tieriad
+        </div>
     </div>
 </template>
 
@@ -49,26 +52,37 @@ export default {
                     icon: 'fas fa-th-large',
                     to: '/',
                 },
+                
                 {
-                    label: 'Products',
-                    icon: 'far fa-folder',
+                    label: 'Order',
+                    icon: 'fas fa-store',
                     to: '/manage/products/',
+                },
+                {
+                    label: 'Manage',
+                    icon: 'fas fa-tasks',
+                    items: [
+                        {
+                            label: 'Incoming orders',
+                            icon: 'far fa-caret-square-right',
+                            to: '/settings/',
+                        },
+                        {
+                            label: 'Products',
+                            icon: 'far fa-folder',
+                            to: '/manage/products/',
+                        },
+                        {
+                            label: 'Agreements',
+                            icon: 'far fa-handshake',
+                            to: '/settings/',
+                        },
+                    ],
                 },
                 {
                     label: 'Settings',
                     icon: 'fas fa-cog',
                     to: '/settings/',
-                },
-                {
-                    label: 'Manage',
-                    icon: 'pi pi-fw pi-search',
-                    items: [
-                        {
-                            label: 'Overview',
-                            icon: 'pi pi-fw pi-id-card',
-                            to: '/manage/',
-                        },
-                    ],
                 },
             ],
         };

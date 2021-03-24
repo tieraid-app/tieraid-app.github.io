@@ -3,10 +3,10 @@
         <div class="p-col-12">
             <Card>
                 <template #title>
-                    <h5>Company information</h5>
+                    <h5>Settings</h5>
                 </template>
                 <template #content>
-                    <p>Welcome Doggo Dog!</p>
+                    Some settings..
                 </template>
             </Card>
         </div>

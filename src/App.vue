@@ -65,7 +65,7 @@ export default {
                         {
                             label: 'Orders',
                             icon: 'fas fa-shopping-basket',
-                            to: '/settings/',
+                            to: '/manage/orders',
                         },
                         {
                             label: 'Catalog',
@@ -75,19 +75,19 @@ export default {
                         {
                             label: 'Customers',
                             icon: 'far fa-handshake',
-                            to: '/settings/',
+                            to: '/manage/customers',
                         },
                         {
                             label: 'Stats',
                             icon: 'far fa-chart-bar',
-                            to: '/settings/',
+                            to: '/manage/stats',
                         },
                     ],
                 },
                 {
                     label: 'Feedback',
                     icon: 'far fa-comment-dots',
-                    to: '/settings/',
+                    to: '/feedback/',
                 },
                 {
                     label: 'Settings',

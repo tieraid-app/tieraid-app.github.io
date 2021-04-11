@@ -12,6 +12,11 @@ const routes = [
         component: () => import( /* webpackChunkName: "login" */ '../views/Login.vue')
     },
     {
+        path: '/forgotpassword',
+        name: 'ForgotPassword',
+        component: () => import( /* webpackChunkName: "forgotpassword" */ '../views/ForgotPassword.vue')
+    },
+    {
         path: '/',
         name: 'Dashboard',
         component: () => import( /* webpackChunkName: "dashboard" */ '../views/Dashboard.vue'),
@@ -59,7 +64,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    if(!store.getters['auth/isAuthenticated'] && to.name !== 'Login') {
+    if(!store.getters['auth/isAuthenticated'] && to.name !== 'Login' && to?.meta?.requiresAuth) {
         router.push({ name: 'Login' })
     }
 

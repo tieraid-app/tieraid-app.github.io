@@ -1,14 +1,16 @@
 <template>
-    <div class="login-body">
-        <div class="login-panel ui-fluid">
-            <div class="login-panel-content">
+    <div class="forgot-password-body">
+        <div class="forgot-password-panel ui-fluid">
+            <div class="forgot-password-panel-content">
                 <form
                     class="p-grid"
                     @submit.prevent="submit"
                 >
                     <div class="p-col-12">
-                        <h1>{{ company.name }}</h1>
-                        <h2>Welcome to tieraid!</h2>
+                        <h1>Forgot Your Password?</h1>
+                        <p>
+                            If you have forgotten your password, please enter your account's email address below and click the "Reset My Password" button. You will receive an email that contains a link to set a new password.
+                        </p>
                     </div>
                     <div class="p-col-12">
                         <span class="p-float-label">
@@ -20,19 +22,7 @@
                                 pattern="^(?![\.\-_])((?![\-\._][\-\._])[a-z0-9\-\._]){0,63}[a-z0-9]@(?![\-])((?!--)[a-z0-9\-]){0,63}[a-z0-9]\.(|((?![\-])((?!--)[a-z0-9\-]){0,63}[a-z0-9]\.))(|([a-z]{2,14}\.))[a-z]{2,14}$"
                                 required
                             />
-                            <label for="username">Username</label>
-                        </span>
-                    </div>
-                    <div class="p-col-12">
-                        <span class="p-float-label">
-                            <InputText
-                                id="password"
-                                v-model="input.password"
-                                class="p-inputtext p-component"
-                                type="password"
-                                required
-                            />
-                            <label for="password">Password</label>
+                            <label for="username">Email</label>
                         </span>
                     </div>
                     <div
@@ -41,9 +31,9 @@
                     >
                         <a
                             class="p-link"
-                            @click="goToForgotPasswordPage"
+                            @click="goToLoginPage"
                         >
-                            Forget Password?
+                            Return to Login Page
                         </a>
                     </div>
                     <div
@@ -53,17 +43,10 @@
                         <Button
                             class="p-button p-component"
                             type="submit"
-                            label="Submit"
+                            label="Reset My Password"
                         />
                     </div>
                 </form>
-                <Message
-                    v-for="error of errors"
-                    :key="error"
-                    :severity="error.severity"
-                >
-                    {{ error.content }}
-                </Message>
             </div>
         </div>
     </div>
@@ -72,51 +55,34 @@
 <script>
 import InputText from 'primevue/inputtext';
 import Button from 'primevue/button';
-import Message from 'primevue/message';
 
 export default {
-    name: 'Login',
+    name: 'ForgotPassword',
     components: {
         InputText,
-        Button,
-        Message
+        Button
     },
     data() {
         return {
             input: {
-                email: null,
-                password: null,
+                email: null
             },
             errors: null
         };
     },
-    computed: {
-        company() {
-            return this.$store.getters['tenant/get'];
-        }
-    },
     methods: {
-        goToForgotPasswordPage() {
-            this.$router.push({ name: 'ForgotPassword' });
+        goToLoginPage() {
+            this.$router.push({ name: 'Login' });
         },
         async submit() {
             this.errors = null;
-            this.$store
-                .dispatch('auth/login', this.input)
-                .then(() => {
-                    this.$router.push({ name: 'Dashboard' });
-                    this.$store.dispatch('users/fetchMe');
-                })
-                .catch(() => {
-                    this.errors = [{severity: 'error', content: 'You have entered an invalid username or password'}];
-                });
-        },
+        }
     },
 };
 </script>
 
 <style lang="scss">
-.login-body {
+.forgot-password-body {
     background-image: url("../assets/images/background.jpg");
     height: 100vh;
     background-position: center;
@@ -124,15 +90,15 @@ export default {
     background-size: cover;
 }
 
-.login-body h1 {
+.forgot-password-body h1 {
     text-transform: uppercase;
 }
 
-.login-body .p-component {
+.forgot-password-body .p-component {
     width: 100%;
 }
 
-.login-body .login-panel {
+.forgot-password-body .forgot-password-panel {
     width: 565px;
     height: 410px;
     background-color: #fafafa;
@@ -147,12 +113,12 @@ export default {
         0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
 }
 
-.login-body .login-panel .login-panel-content {
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content {
     padding: 58px 98px;
     position: relative;
 }
 
-.login-body .login-panel .login-panel-content h1 {
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content h1 {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1.3px;
@@ -162,7 +128,7 @@ export default {
     text-align: center;
 }
 
-.login-body .login-panel .login-panel-content h2 {
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content h2 {
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.5px;
@@ -172,26 +138,26 @@ export default {
     text-align: center;
 }
 
-.login-body .login-panel .login-panel-content button.p-link {
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content button.p-link {
     color: #457fca;
     font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
         Lucida Grande, sans-serif;
     font-size: 14px;
 }
 
-.login-body .login-panel .login-panel-content .p-col-12,
-.login-body .login-panel .login-panel-content .p-col-6 {
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content .p-col-12,
+.forgot-password-body .forgot-password-panel .forgot-password-panel-content .p-col-6 {
     padding: 1em;
 }
 
 @media screen and (max-width: 1024px) {
-    .login-body .login-panel {
+    .forgot-password-body .forgot-password-panel {
         left: 0;
         margin-left: 0;
         width: 100%;
     }
 
-    .login-body .login-panel .login-panel-content {
+    .forgot-password-body .forgot-password-panel .forgot-password-panel-content {
         padding: 58px 38px;
     }
 }

@@ -1,6 +1,12 @@
 <template>
-    <div :class="containerClass" @click="onWrapperClick">
-        <AppTopBar v-if="isAuthenticated" @menu-toggle="onMenuToggle" />
+    <div 
+        :class="containerClass" 
+        @click="onWrapperClick"
+    >
+        <AppTopBar
+            v-if="isAuthenticated"
+            @menu-toggle="onMenuToggle"
+        />
         <transition 
             name="layout-sidebar"
             v-if="isAuthenticated"

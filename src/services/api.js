@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://tieraid.herokuapp.com/';
+axios.defaults.baseURL = process.env.VUE_APP_DOMAIN || '/';
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 axios.defaults.headers.common.Accept = 'application/json';
 const customRequest = (data) => {

@@ -402,25 +402,6 @@ export default {
             this.product = {};
             // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
         },
-        findIndexById(id) {
-            let index = -1;
-            for (let i = 0; i < this.products.length; i++) {
-                if (this.products[i].id === id) {
-                    index = i;
-                    break;
-                }
-            }
-
-            return index;
-        },
-        createId() {
-            let id = '';
-            var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            for ( var i = 0; i < 5; i++ ) {
-                id += chars.charAt(Math.floor(Math.random() * chars.length));
-            }
-            return id;
-        },
         exportCSV() {
             this.$refs.dt.exportCSV();
         },

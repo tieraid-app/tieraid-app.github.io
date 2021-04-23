@@ -28,7 +28,7 @@
             <router-view />
         </div>
         <div class="layout-footer">
-            Powered by tieriad
+            Powered by Tieraid
         </div>
     </div>
 </template>

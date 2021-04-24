@@ -2,8 +2,8 @@
     <div class="p-grid">
         <div class="p-col-12">
             <div class="card">
-                <h5>Manage</h5>
-                <p>Manage things here..</p>
+                <h5>Marketplace</h5>
+                <p>List products here that are buyable</p>
             </div>
         </div>
     </div>

@@ -60,9 +60,9 @@ export default {
                 },
                 
                 {
-                    label: 'Buy',
+                    label: 'Marketplace',
                     icon: 'fas fa-store',
-                    to: '/manage/products/',
+                    to: '/marketplace/',
                 },
                 {
                     label: 'Sell',

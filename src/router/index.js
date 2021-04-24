@@ -41,11 +41,11 @@ const routes = [
         }  
     },
     { 
-        path: '/manage/',
-        component: () => import( /* webpackChunkName: "manage" */ '../views/Manage.vue'),
+        path: '/marketplace/',
+        component: () => import( /* webpackChunkName: "manage" */ '../views/Marketplace.vue'),
         meta: {
             requiresAuth: true
-        }  
+        }
     },
     { 
         path: '/manage/products',

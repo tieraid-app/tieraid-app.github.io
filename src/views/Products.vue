@@ -381,7 +381,6 @@ export default {
                     this.$store.dispatch('products/update',  this.product);
                 } else {
                     this.$store.dispatch('products/create', this.product);
-                    // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Created', life: 3000});
                 }
 
                 this.productDialog = false;
@@ -389,7 +388,7 @@ export default {
             }
         },
         editProduct(product) {
-            this.product = product;
+            this.product = { ...product };
             this.productDialog = true;
         },
         confirmDeleteProduct(product) {
@@ -400,7 +399,6 @@ export default {
             this.$store.dispatch('products/delete', { id: this.product.id });
             this.deleteProductDialog = false;
             this.product = {};
-            // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Product Deleted', life: 3000});
         },
         exportCSV() {
             this.$refs.dt.exportCSV();
@@ -415,7 +413,6 @@ export default {
 
             this.deleteProductsDialog = false;
             this.selectedProducts = null;
-            // this.$toast.add({severity:'success', summary: 'Successful', detail: 'Products Deleted', life: 3000});
         }
     }
 }

@@ -27,7 +27,7 @@ const routes = [
     { 
         path: '/account',
         name: 'Account',
-        component: () => import( /* webpackChunkName: "manage" */ '../views/Account.vue'),
+        component: () => import( /* webpackChunkName: "accounts" */ '../views/Account.vue'),
         meta: {
             requiresAuth: true
         }  
@@ -35,21 +35,29 @@ const routes = [
     { 
         path: '/settings',
         name: 'Settings',
-        component: () => import( /* webpackChunkName: "manage" */ '../views/Settings.vue'),
+        component: () => import( /* webpackChunkName: "settings" */ '../views/Settings.vue'),
         meta: {
             requiresAuth: true
         }  
     },
     { 
         path: '/marketplace/',
-        component: () => import( /* webpackChunkName: "manage" */ '../views/Marketplace.vue'),
+        component: () => import( /* webpackChunkName: "marketplace" */ '../views/Marketplace.vue'),
         meta: {
             requiresAuth: true
         }
     },
     { 
         path: '/manage/products',
-        component: () => import( /* webpackChunkName: "manage" */ '../views/Products.vue'),
+        component: () => import( /* webpackChunkName: "products" */ '../views/Products.vue'),
+        meta: {
+            requiresAuth: true
+        }
+        
+    },
+    { 
+        path: '/manage/customers',
+        component: () => import( /* webpackChunkName: "customers" */ '../views/Customers.vue'),
         meta: {
             requiresAuth: true
         }

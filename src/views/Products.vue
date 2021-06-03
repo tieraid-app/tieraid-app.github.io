@@ -126,7 +126,7 @@
                 >
                     <img
                         v-if="product.image"
-                        :src="'assets/layout/images/product/' + product.image"
+                        :src="product.preview || product.image"
                         :alt="product.image"
                         class="product-image"
                     >
@@ -211,12 +211,26 @@
                             />
                         </div>
                         <div class="p-field p-col">
-                            <label for="quantity">Brand</label>
+                            <label for="brand">Brand</label>
                             <InputText
-                                id="sku"
+                                id="brand"
                                 v-model.trim="product.brand"
                                 required="true"
                                 :class="{'p-invalid': submitted && !product.brand}"
+                            />
+                        </div>
+                    </div>
+                    <div class="p-formgrid p-grid">
+                        <div class="p-field p-col w-100">
+                            <FileUpload
+                                ref="file"
+                                @change="onFileChange"
+                                mode="basic"
+                                accept="image/*"
+                                :max-file-size="1000000"
+                                label="Product image"
+                                choose-label="Product image"
+                                class="p-mr-2 p-d-inline-block w-100"
                             />
                         </div>
                     </div>
@@ -354,6 +368,12 @@ export default {
         this.$store.dispatch('products/fetchAll');
     },
     methods: {
+        onFileChange(e) {
+            this.product.multipartFormData = true;
+            const file = this.$refs.file.files[0];
+            this.product.image = file;
+            this.product.preview = URL.createObjectURL(file);
+        },
         formatCurrency(value) {
             return value;
             // return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
@@ -364,7 +384,10 @@ export default {
                 description: '',
                 sku: '',
                 brand: '',
-                tags: ['NEW']
+                tags: ['NEW'],
+                image: '',
+                multipartFormData: false,
+                preview: ''
             };
             this.submitted = false;
             this.productDialog = true;
@@ -376,7 +399,9 @@ export default {
         saveProduct() {
             this.submitted = true;
             if (this.validForm) {
-
+                if (!this.product.multipartFormData) {
+                    delete this.product.image;
+                }
                 if(this.product.id) {
                     this.$store.dispatch('products/update',  this.product);
                 } else {
@@ -464,5 +489,8 @@ export default {
 		background: #FEEDAF;
 		color: #8A5340;
 	}
+}
+.w-100 {
+    width: 100%;
 }
 </style>

@@ -3,8 +3,20 @@ import axios from 'axios';
 axios.defaults.baseURL = process.env.VUE_APP_DOMAIN || '/';
 axios.defaults.headers.common['Content-Type'] = 'application/json';
 axios.defaults.headers.common.Accept = 'application/json';
-const customRequest = (data) => {
-    return axios(data)
+const customRequest = (options) => {
+    const { data } = options;
+    if (data && data.multipartFormData) {
+        let formData = new FormData();
+        for (let key in data) {
+            const content = data[key];
+            if (content) {
+                formData.append(key, content);
+            }
+        }
+        data.headers = { 'Content-Type': 'multipart/form-data' }
+        options.data = formData;
+    }
+    return axios(options)
         .then((response) => {
             return response.data;
         })

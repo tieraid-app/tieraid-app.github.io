@@ -25,7 +25,7 @@ jobs:
         steps:
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - name: Clone github pages of root tieraid
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               with:
                 repository: tieraid-app/tieraid-app-frontend
                 ref: main

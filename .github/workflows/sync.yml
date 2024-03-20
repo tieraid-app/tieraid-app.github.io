@@ -1,12 +1,8 @@
-# This is a basic workflow to help you get started with Actions
 
-name: Sync tieraid app
-permissions:
-  contents: read
-# Controls when the action will run. 
+name: Sync tieraid app public 
+
 on:
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
   repository_dispatch:

@@ -1,0 +1,645 @@
+{
+    "404": {
+        "description": "Beklager, vi kunne ikke finde den side, du leder efter. Måske har du tastet URL'en forkert? Sørg for at tjekke din stavning.",
+        "goBack": "Gå tilbage",
+        "title": "Ups, siden blev ikke fundet!"
+    },
+    "abbreviation": {
+        "sku": "SKU (Stock Keeping Unit) er en unik kode, der bruges til at spore og administrere individuelle produkter i lageret."
+    },
+    "activateUser": {
+        "activateAccount": "Aktiver konto",
+        "activateAccountSuccessMessage": "Din konto er blevet aktiveret. Du vil nu blive omdirigeret til login-siden.",
+        "activateAccountSuccessTitle": "Succesfuld aktivering!",
+        "activateUserSubTitle": "Indtast dine oplysninger for at aktivere din konto",
+        "activateUserTitle": "Lad os begynde - Aktiver din konto",
+        "generalActivateAccountError": "Denne konto kan ikke aktiveres i øjeblikket. Prøv igen senere."
+    },
+    "address": {
+        "address": "Postadresse",
+        "adress_line": "Leveringsadresse",
+        "city": "By",
+        "co": "c/o",
+        "zipCode": "Postnummer"
+    },
+    "cart": {
+        "addToCart": "Tilføj til kurv",
+        "cart": "Din indkøbskurv ({{ totalItems }})",
+        "contactDetails": "Kontaktinformation",
+        "empty": "Dit lager er tomt"
+    },
+    "category": {
+        "deleteDialogText": "Er du sikker på, at du vil slette dette element?"
+    },
+    "checkout": {
+        "acceptedTermsAndCondition": "Jeg accepterer vilkår og betingelser",
+        "checkout": "Bestilling",
+        "checkoutButton": "Send ordre",
+        "city": "By",
+        "defaultErrorMessage": "Desværre kan ordren ikke placeres, prøv igen senere.",
+        "defaultErrorTitle": "Ordren mislykkedes",
+        "description": "Yderligere detaljer om ordren",
+        "name": "Fulde navn",
+        "orderConfirmation": "Din ordre er bekræftet",
+        "orderConfirmationDetail": "Tak for din ordre. Du vil modtage en bekræftelses-e-mail med ordredetaljer.",
+        "orderOverview": "Se ordredetaljer",
+        "postalCode": "Postnummer"
+    },
+    "company": {
+        "addressLabel": "Virksomhedens adresser",
+        "company": "Firma",
+        "companyUpdateError": "Desværre kan firmaoplysningerne ikke opdateres, prøv igen senere.",
+        "companyUpdateSuccess": "Firmaoplysninger opdateret med succes",
+        "email": "Firma e-mail",
+        "emailHelperText": "Denne e-mail bruges internt til al kommunikation fra tieraid",
+        "image": {
+            "none": "Ingen logo",
+            "remove": {
+                "submit": "Fjern logo"
+            },
+            "upload": {
+                "description": "Vælg enten at uploade et nyt logo for at opdatere din branding, eller fjern det eksisterende, hvis der ikke er brug for et logo.",
+                "submit": "Upload nyt logo",
+                "title": "Firmalogo"
+            }
+        },
+        "invalidCompanyAddress": "Gadenavn og nummer er påkrævet",
+        "invoiceAddress": "Firma fakturaadresse",
+        "invoiceCheckbox": "Firmaadressen er den samme som fakturaadressen",
+        "name": "Firmanavn",
+        "number": "Organisationsnummer",
+        "orderFrom": "Bestil fra",
+        "postalAddress": "Postadresse",
+        "settings": {
+            "optIn": {
+                "createError": "Mislykkedes med at tilføje brugerdefineret opt-in-besked",
+                "createSuccess": "Brugerdefineret opt-in-besked blev tilføjet med succes",
+                "description": "Du kan tilpasse opt-in-beskeden for kunder ved kassen. Tilpas teksten for at opmuntre kunder til at tilmelde sig dine nyhedsbreve eller tilbud. Sørg for, at beskeden er klar, indbydende og overholder privatlivsregler.",
+                "title": "Opt-in"
+            },
+            "termsAndConditions": {
+                "createError": "Mislykkedes med at tilføje brugerdefineret besked for vilkår og betingelser",
+                "createSuccess": "Brugerdefineret besked for vilkår og betingelser blev tilføjet med succes",
+                "description": "Du kan tilpasse teksten til Vilkår og betingelser ved kassen. Opdater betalings-, leverings- og returpolitik, så det passer til din virksomhed. Brug klart sprog og tilføj juridiske krav for at beskytte dig og dine kunder.",
+                "title": "Vilkår og betingelser"
+            }
+        }
+    },
+    "contact": {
+        "emailNotChangeableMessage": "E-mailen kan ikke ændres, kontakt venligst support, hvis du vil ændre den.",
+        "firstName": "Fornavn",
+        "lastName": "Efternavn",
+        "telephone": "Mobilnummer"
+    },
+    "country": {
+        "denmark": "Danmark",
+        "finland": "Finland",
+        "norway": "Norge",
+        "sweden": "Sverige"
+    },
+    "dashboard": {
+        "title": "Instrumentbræt",
+        "todoErrorMessage": "Desværre kunne opgaven ikke opdateres. Prøv igen senere.",
+        "todoTitle": "Opgaver at fuldføre:",
+        "welcome": "Hej, velkommen tilbage {{user}}"
+    },
+    "feedback": {
+        "confirmation": {
+            "preamble": "Din feedback er meget værdifuld for os og bruges til at forbedre vores app.",
+            "title": "Tak for din feedback"
+        },
+        "description": "Beskrivelse",
+        "done": "Færdig",
+        "error": {
+            "description": "Kunne ikke sende feedback. Prøv venligst igen senere.",
+            "title": "Kunne ikke sende feedback"
+        },
+        "leaveFeedback": "Efterlad feedback",
+        "title": "Feedback",
+        "type": {
+            "bug": "Fundet en fejl",
+            "feature": "Ny funktion",
+            "improvement": "Forbedringsforslag",
+            "label": "Hvad vil du fortælle os?",
+            "support": "Jeg har brug for support"
+        }
+    },
+    "forgotPassword": {
+        "description": "Indtast venligst din e-mail, der er registreret i Tieraid-appen, og vi sender dig instruktioner om, hvordan du nulstiller din adgangskode",
+        "error": {
+            "description": "Vi har problemer med at sende dig en nulstilling af adgangskode, prøv igen senere",
+            "title": "Kunne ikke sende e-mail"
+        },
+        "primaryButtonLabel": "Send instruktioner",
+        "success": {
+            "description": "Følg venligst linket for at nulstille din adgangskode.",
+            "title": "En e-mail er blevet sendt"
+        },
+        "title": "Problemer med at logge ind?"
+    },
+    "general": {
+        "active": "Aktiv",
+        "addressMaxLength": "Adresselinjen er for lang, prøv at forkorte den (maks. {{count}} tegn)",
+        "addressMaxLength_plural": "",
+        "addressRequiredMessage": "Adresse er påkrævet",
+        "cancel": "Annuller",
+        "choose": "Vælg",
+        "cityRequiredMessage": "By er påkrævet",
+        "companyMaxLength": "Firmanavnet er for langt (maks. {{count}} tegn)",
+        "companyMaxLength_plural": "",
+        "count": "Antal: {{count}} stykke",
+        "countPackage": "Antal: {{count}} pakke",
+        "countPackage_plural": "Antal: {{count}} pakker",
+        "count_plural": "Antal: {{count}} stykker",
+        "date": "Dato",
+        "delete": "Slet",
+        "descriptionMinLengthMessage": "Minimumlængde af beskrivelse {{count}} tegn",
+        "descriptionMinLengthMessage_plural": "Minimumlængde af beskrivelse {{count}} tegn",
+        "edit": "Rediger",
+        "emailInvalidMessage": "E-mail skal være en gyldig e-mail adresse",
+        "emailRequiredMessage": "E-mail er påkrævet",
+        "error": {
+            "tryAgain": "Desværre oplever vi tekniske problemer, prøv igen senere."
+        },
+        "errorDefaultMessage": "Desværre oplever vi tekniske problemer, prøv igen senere.",
+        "field": {
+            "emailRequired": "Indtast venligst en gyldig e-mailadresse",
+            "required": "Dette felt er påkrævet."
+        },
+        "forgotPasswordMessage": "Glemt adgangskode?",
+        "fullNameRequiredMessage": "Fulde navn er påkrævet",
+        "goTo": "Til",
+        "loginButton": "Log ind",
+        "loginErrorMessage": "Forkert e-mail eller adgangskode",
+        "logout": "Log ud",
+        "name": "Navn",
+        "new": "Ny",
+        "newPassword": "Ny adgangskode",
+        "noResultLabel": "Ingen resultater",
+        "otherAccounts": "Se konti",
+        "password": "Adgangskode",
+        "passwordRequiredMessage": "Adgangskode er påkrævet",
+        "phoneInvalidMessage": "Ugyldigt telefonnummer. Brug venligst et gyldigt format (f.eks. +46XX-XXXXXXXX).",
+        "postalCodeRequiredMessage": "Postnummer er påkrævet",
+        "repeatPassword": "Gentag adgangskode",
+        "resend": "Send igen",
+        "save": "Gem",
+        "saveButtonLabel": "Gem",
+        "showLess": "Vis mindre",
+        "showMore": "Vis mere",
+        "submit": "Sende",
+        "subtitle": "Indtast dine oplysninger nedenfor",
+        "technicalErrorMessage": "Teknisk problem",
+        "termsRequiredMessage": "Vilkår er påkrævet",
+        "title": "Log ind på {{company}}",
+        "welcome": "Hej, velkommen tilbage"
+    },
+    "inventory": {
+        "addButtonLabel": "Tilføj produkt",
+        "addDocumentButton": "Tilføj dokument",
+        "associateProductRole": {
+            "failed": {
+                "description": "Prøv igen senere.",
+                "title": "Kunne ikke tildele ny rolle til produkt"
+            },
+            "success": {
+                "description": "Produktet '{{product}}' har fået tildelt rollen '{{role}}'.",
+                "title": "Ny rolle tildelt produkt"
+            }
+        },
+        "cancelButtonLabel": "Annuller",
+        "deleteDialogTextContent": "Er du sikker på, at du vil slette dette element?",
+        "deleteDialogTitle": "Bekræft sletning",
+        "documents": "Dokumenter",
+        "editButtonLabel": "Rediger",
+        "editCategoriesLabel": "Rediger kategorier",
+        "fetchError": "Kan ikke indlæse data. Vent et øjeblik og prøv igen.",
+        "formErrorCategory": "Kategori er påkrævet",
+        "formErrorMessage": "Der opstod en ukendt fejl. Prøv igen senere",
+        "formErrorName": "Navn er påkrævet",
+        "general": "Generel",
+        "helperTextMinQuantityPerPallet": "Den minimale mængde, der kræves for at bruge en palle.",
+        "helperTextQuantityPerPallet": "Der er {{ count }} palle på lager med produkter",
+        "helperTextQuantityPerPallet_plural": "Der er {{ count }} paller på lager med produkter",
+        "hidden": "Vis ikke kategorien",
+        "include_children": "Inkl. und.",
+        "labelCategories": "Alle kategorier",
+        "labelCreated": "Oprettet",
+        "labelImage": "Billede",
+        "labelMinQuantityPerPallet": "Mindste mængde per palle",
+        "labelName": "Navn",
+        "labelOffers": "Tilbud",
+        "labelPallet": "Palleplacering",
+        "labelPicking": "Plukning placering",
+        "labelProductCategories": "Produktkategorier",
+        "labelProductData": "Produktdata",
+        "labelProductImage": "Produktbillede",
+        "labelProductInformation": "Produktinformation",
+        "labelProductTags": "Produkttags",
+        "labelQuantityPerPallet": "Mængde pr. palle",
+        "labelSupplier": "Leverandør",
+        "labelTags": "Tags",
+        "labelThreshold": "Lavt lagerpunkt",
+        "labelUnitCode": "Enhed",
+        "latest": "Nyeste",
+        "maxValue": "{{field}} skal være mindre end eller lig med {{max}}",
+        "noImage": "Ingen billede",
+        "noSearchResultsFound": "Ingen søgeresultater fundet",
+        "popular": "Populær",
+        "removeFilterLabel": "Fjern filter",
+        "removeProductRole": {
+            "failed": {
+                "description": "Prøv igen senere.",
+                "title": "Kunne ikke fjerne rollen '{{role}}'"
+            },
+            "success": {
+                "description": "Produktet '{{product}}' er ikke længere tilknyttet rollen '{{role}}'",
+                "title": "Rollen fjernet fra produkt"
+            }
+        },
+        "rowsPerPageLabel": "Rækker pr. side",
+        "searchPlaceholder": "Søg efter produkter efter id, navn, mærke, varenummer, etc.",
+        "sortLabel": "Sorte",
+        "sortSaveLabel": "Gem sortering",
+        "stockManagement": "Lager",
+        "tablePaginationOf": "af",
+        "tagPlaceholder": "Skriv og tryk enter",
+        "title": "Mine produkter",
+        "unSavedChanges": "Ændringer, du har foretaget, er måske ikke gemt.",
+        "updateButtonLabel": "Opdater",
+        "uploadButtonLabel": "Upload billede"
+    },
+    "label": {
+        "address": "Adresse",
+        "brand": "Mærke",
+        "careOf": "c/o (care of, valgfrit)",
+        "category": "Kategori",
+        "companyName": "Firmanavn",
+        "country": "Land",
+        "customer": "Kunde",
+        "description": "Beskrivelse",
+        "email": "E-mail",
+        "language": "Sprog",
+        "messages": "Beskeder",
+        "orderDate": "Bestillingsdato",
+        "pallets": "Paller",
+        "productID": "Produkt-ID",
+        "productName": "Produktnavn",
+        "quantity": "Mængde",
+        "saveChanges": "Gem ændringer",
+        "sku": "SKU",
+        "telephone": "Telefon",
+        "title": "Titel",
+        "user": "Bruger",
+        "website": "Websted"
+    },
+    "landing": {
+        "footer": {
+            "contactText": "Kontaktinformation"
+        },
+        "heroLayout": {
+            "contactButtonLabel": "Kom i kontakt",
+            "subText": "Optimer din virksomhed med vores revolutionerende indkøbs- og ordrehåndteringssystem! Strømlin, automatiser og forenkl dine forretningsprocesser for maksimal produktivitet og rentabilitet.",
+            "systemText": "ordrehåndteringssystem"
+        },
+        "processBox": {
+            "step1": {
+                "bodyText": "Etablér samarbejder med de virksomheder, du allerede samarbejder med i dag, og sæt derefter systemet i brug sammen. Dette trin vil styrke dine samarbejder og optimere din forretning.",
+                "title": "Samarbejde"
+            },
+            "step2": {
+                "bodyText": "Ved at integrere eksisterende produkter i systemet skaber du effektivitet og åbner muligheder for vækst. Det giver konkurrencefordele og forbedret kundeservice.",
+                "title": "Tilføj og rediger produkter"
+            },
+            "step3": {
+                "bodyText": "Kom i gang med at registrere, pakke og håndtere ordrer smidigt i systemet. Dette vil optimere din ordreproces og øge din produktivitet.",
+                "title": "Ordrebehandling"
+            },
+            "step4": {
+                "bodyText": "Afkryds simpelthen de leverede ordrer i systemet, når de er sendt. Dette giver dig et bedre overblik over leveringsstatus og strømliner din lagerstyring.",
+                "title": "Levering"
+            }
+        },
+        "screenshotBox": {
+            "listText": "Opret og håndter ordrer",
+            "listText2": "Adgang til aktuelle vareregistre",
+            "listText3": "Med Tieraid-arbejdsordrer får du fuld kontrol over alle pågående og udførte ordrer",
+            "title": "Smidigere ordrehåndtering med Tieraid"
+        }
+    },
+    "language": {
+        "danish": "Dansk",
+        "english": "Engelsk",
+        "finnish": "Finsk",
+        "norwegian": "Norsk",
+        "swedish": "Svensk"
+    },
+    "marketplace": {
+        "errorSupplierFetch": "Produkter kunne ikke hentes",
+        "productPage": {
+            "backButton": "Tilbage til produkter",
+            "inStock": "På lager",
+            "modalButton": "Indstillinger",
+            "outOfStock": "Ikke på lager",
+            "productAccessLabel": "Produktadgang",
+            "productErrorMessage": "Beklager, vi kunne ikke levere produktinformation i øjeblikket. Prøv igen senere.",
+            "productErrorTitle": "Produkt ikke fundet",
+            "productRoleDescription": "Se alle roller og deres respektive tilladelser for det valgte produkt",
+            "productRolePermissionLabel": "Administrer produkttilladelse",
+            "quantityTips": "Tip! Du kan også indtaste det ønskede antal.",
+            "quantityUnit": "stk.",
+            "roleErrorMessage": "Beklager, vi kunne ikke levere roller i øjeblikket. Prøv igen senere. Kontroller, at roller eksisterer under indstillinger > brugere.",
+            "roleErrorTitle": "Roller ikke fundet",
+            "roles": "Roller",
+            "stockStatus": "Produkttilgængelighed"
+        },
+        "searchPlaceholder": "Søg efter produkter efter id, navn, mærke, etc.",
+        "supplierFetchError": "Teknisk problem",
+        "title": "Tilgængelige produkter"
+    },
+    "message": {
+        "passwordNotMatch": "Adgangskoden stemmer ikke."
+    },
+    "microcopy": {
+        "fieldCannotBeEmpty": "Dette felt må ikke være tomt.",
+        "invalidUrl": "Det ser ikke ud som en gyldig URL. Prøv igen."
+    },
+    "orders": {
+        "cancelOrderButtonLabel": "Annuller ordre",
+        "cancelOrderErrorMessage": "Desværre kunne vi ikke annullere din ordre lige nu.",
+        "cancelOrderErrorTitle": "Annullering mislykkedes",
+        "cancelOrderSuccessMessage": "Din ordre er blevet annulleret med succes.",
+        "cancelOrderSuccessTitle": "Ordre annulleret",
+        "cancelled": "Annulleret",
+        "completed": "Afsluttet",
+        "createBackorderButtonLabel": "Opret bagudbestilling",
+        "createBackorderErrorMessage": "Bagudbestilling kunne ikke oprettes. Det kan skyldes, at mængden er for lav.",
+        "createBackorderSuccessMessage": "Bagudbestilling oprettet med ordrenummer",
+        "created": "Oprettet",
+        "customerLabel": "Kunde",
+        "delivered": "Afleveret",
+        "deliveredOrderButtonLabel": "Ordre leveret",
+        "descriptionLabel": "Besked fra kunden",
+        "dialog": {
+            "cancelButtonText": "Annuller",
+            "confirmButtonText": "Bekræft",
+            "content": "Er du sikker på, at du vil annullere ordren?",
+            "title": "Annuller ordre"
+        },
+        "editOrderButtonLabel": "Rediger ordre",
+        "emptyBackorderInfoMessage": "Desværre er det ikke muligt at oprette en bagudbestilling baseret på den nuværende ordre.",
+        "emptyBackorderInfoTitle": "Ordren må ikke være tom",
+        "fetchOrderErrorMessage": "Desværre kan vi i øjeblikket ikke hente dine ordrer. Prøv igen senere.",
+        "fetchOrderErrorTitle": "Teknisk problem",
+        "heading": {
+            "orderInfo": "Bestillingsinformation"
+        },
+        "loggedInUserGuest": "Gæst",
+        "open": "Åben",
+        "orderDateLabel": "Dato",
+        "orderDetailLabel": "Ordredetaljer",
+        "orderNumberLabel": "Ordre #",
+        "orderProcessingLabel": "Ordrebehandling",
+        "orderReference": "Bestiller",
+        "orderShippedLabel": "Ordre Afsendt",
+        "partner": "Partner",
+        "printLabel": "Print ordre",
+        "processing": "Behandlet",
+        "product": "Produkt",
+        "productHeading": "Produkter",
+        "rest": "Rest",
+        "searchOrderPlaceholder": "Søg efter ordre-ID, beskrivelse eller ordrestatus...",
+        "shipped": "Afsendt",
+        "statusLabel": "Status",
+        "subtractOriginalOrderLabel": "Træk fra den oprindelige ordre",
+        "title": "Dine ordrer"
+    },
+    "partner": {
+        "activePartner": "Aktiv",
+        "addPartner": "Tilføj partner",
+        "fetchPartnerErrorTitle": "Ingen partner fundet",
+        "inactivePartner": "Inaktiv",
+        "partnerDefaultErrorMessage": "Partneren kunne ikke tilføjes. Dette kan skyldes, at organisationsnummeret er forkert, eller fordi partneren ikke tillader anmodninger.",
+        "partnerLoading": "Søger efter en partner. Hold fast!",
+        "partnerNotFoundErrorMessage": "Desværre kunne ingen partner findes",
+        "title": "Partner"
+    },
+    "partnership": {
+        "agreements": "Aftaler",
+        "assortment": {
+            "description": "Indstil sortimentet, som denne partner skal have adgang til. Det angiver produkter, der vil være tilgængelige.",
+            "title": "Tilgængeligt sortiment"
+        },
+        "create": "Tilføj partner",
+        "notification": {
+            "addMoreEmailLabel": "Tilføj flere e-mails",
+            "failedAddDescription": "Prøv venligst igen om et øjeblik.",
+            "failedAddTitle": "Kunne ikke tilføje e-mails",
+            "failedRemovedDescription": "Prøv venligst igen om et øjeblik.",
+            "failedRemvedTitle": "Kunne ikke fjerne e-mails",
+            "lowStockDescription": "Når et produkt når en lav tærskel, vil en e-mail blive sendt fra leverandøren til modtagerne nedenfor. Du kan tilføje en eller flere e-mailmodtagere. Hvis ingen modtagere tilføjes, og du har abonneret på notifikationer, vil e-mailen blive sendt til din virksomhedens e-mailadresse (den der er indstillet under Virksomhedsindstillinger).",
+            "lowStockSettingNotEnabledDescription": "Det ser ud til, at indstillingen for lav lagerbeholdningsmeddelelser ikke er aktiveret.",
+            "lowStockSettingNotEnabledTitle": "Indstillingen er ikke aktiveret",
+            "lowStockTitle": "Lav tærskel hændelser",
+            "orderDescription": "Når en bruger opretter en ordre hos en af dine leverandører, vil en kopi af e-mailbekræftelsen også blive sendt til modtagerne nedenfor. Du kan tilføje en eller flere e-mailmodtagere. Hvis ingen modtagere tilføjes, og du har abonneret på notifikationer, vil e-mailen blive sendt til din virksomhedens e-mailadresse (den der er indstillet under Virksomhedsindstillinger).",
+            "orderTitle": "Nye ordre hændelser",
+            "removeLabel": "Fjern e-mail",
+            "successfulAddDescription": "Tilføjede '{{emails}}' for notifikationstype '{{type}}'",
+            "successfulAddTitle": "Succes",
+            "successfulRemovedDescription": "Fjernede '{{emails}}' for notifikationstype '{{type}}'",
+            "successfulRemovedTitle": "Fjernelse succes",
+            "title": "Notifikationer"
+        },
+        "order": {
+            "statistic": {
+                "description": "Her kan du få en oversigt over hvor mange produkter der er bestilt (standardperiode er sat til indeværende måned)",
+                "item": {
+                    "count": "Mængder",
+                    "delivered_count": "Leveret",
+                    "id": "Produkt-id",
+                    "name": "Produktnavn",
+                    "orders_count": "Ordre"
+                },
+                "loggedInUser": "Autentificeret",
+                "loggedInUserGuest": "Gæst",
+                "searchPlaceholder": "Søg efter produktnavn, mærke eller produkt id...",
+                "selectInterval": "Vælg interval",
+                "title": "Bestillingsstatistik"
+            }
+        },
+        "products": {
+            "description": "Her er alle tilgængelige produkter, som din partner kan se.",
+            "exportCsv": "Eksportér til CSV-fil",
+            "none": "Der er ingen tilgængelige produkter",
+            "palletsDescription": "Der er i alt {{ available }} produkter, og hver palle rummer {{ quantityPerPallet }} produkter, og mindste mængde per palle er {{ minimumQuantityPerPallet }}.",
+            "quantityDescription": "Der er i alt {{ current }}, hvoraf {{ reserved }} er planlagt til levering, så tilgængeligheden er {{ available }} stk.",
+            "title": "Tilgængelige produkter"
+        },
+        "settings": {
+            "customer": {
+                "description": "Alle indstillinger, du kan foretage som kunde over for din partner, er opført her.",
+                "populateRolesInAllOrdersHelperText": "Brugerens rolle vil blive inkluderet i beskeden ved bestilling.",
+                "populateRolesInAllOrdersLabel": "Tilføj roller til ordrer",
+                "subscribeOnLowStockEventHelperText": "Når aktiveret, vil lav lagerbeholdningshændelser sendt af leverandøren blive sendt til en af dine modtagere.",
+                "subscribeOnLowStockEventLabel": "Abonner på lav lagerbeholdningshændelser"
+            },
+            "description": "Indstillinger, du kan indstille som leverandør for dette partnerskab.",
+            "failedDescription": "",
+            "failedTitle": "",
+            "showStockInformationHelperText": "Når det er aktivt, vises antallet af tilgængelige produkter.",
+            "showStockInformationLabel": "Vis antal tilgængelige produkter",
+            "title": "Indstillinger"
+        },
+        "title": "Partner",
+        "viewDetails": "Vis detaljer"
+    },
+    "profile": {
+        "changePassword": {
+            "currentPasswordLabel": "Nuværende adgangskode",
+            "description": "Opdater din adgangskode regelmæssigt for at holde din konto sikker. Følg disse trin for at oprette en stærk, ny adgangskode og beskytte dine personlige oplysninger.",
+            "failedTitle": "Kunne ikke ændre adgangskoden. Tjek venligst din nuværende adgangskode, og prøv igen.",
+            "primaryButton": "Opdater",
+            "successTitle": "Din adgangskode er blevet ændret!",
+            "title": "Skift adgangskode"
+        },
+        "detailsTitle": "Profildetaljer",
+        "image": {
+            "remove": {
+                "errorTitle": "Fjernelse af profilbillede mislykkedes",
+                "submit": "Fjern profilbillede"
+            },
+            "upload": {
+                "description": "Tilføj et nyt profilbillede eller fjern det eksisterende.",
+                "errorTitle": "Fjernelse af profilbillede mislykkedes",
+                "submit": "Tilføj nyt billede",
+                "success": "Profilbilledet blev ændret med succes",
+                "title": "Profilbillede"
+            }
+        },
+        "lastLogin": "Sidste login {{ date }}",
+        "security": "Sikkerhed",
+        "title": "Profil",
+        "updateError": "Kunne ikke gemme ændringerne. Prøv venligst igen.",
+        "updateSuccess": "Dine ændringer er blevet gemt succesfuldt."
+    },
+    "resetPassword": {
+        "description": "Næsten færdig. Indtast en ny adgangskode, og når den er ændret, vil du blive logget ind.",
+        "error": {
+            "description": "Vi kunne ikke ændre din adgangskode, prøv venligst igen senere.",
+            "title": "Kunne ikke ændre adgangskode"
+        },
+        "passwordNotMatchingMessage": "Kontroller venligst, at din adgangskode matcher",
+        "primaryButtonLabel": "Nulstil adgangskode",
+        "success": {
+            "description": "Din adgangskode er ændret, omdirigerer til login-siden ...",
+            "title": "Adgangskode ændret"
+        },
+        "title": "Nulstil din adgangskode"
+    },
+    "settings": {
+        "guest": {
+            "description": "Aktiver mulighed for at lade brugere uden en konto afgive ordrer gennem din app.",
+            "errorDescription": "Prøv venligst igen senere.",
+            "errorTitle": "Kunne ikke opdatere gæsteindstillinger",
+            "guestAccessDescription": "Tillad brugere uden konto at afgive ordrer.",
+            "guestAccessLabel": "Tillad gæstekøb",
+            "guestImageDescription": "Vis din virksomheds logo på gæstesiden",
+            "guestImageLabel": "Vis firmalogo",
+            "infoMessageNoRoles": "Tilføj en rolle for at aktivere denne funktionalitet",
+            "message": "Informationsbesked til gæstebruger",
+            "roleDescription": "Produkter med denne tilknyttede rolle vil være synlige",
+            "roleLabel": "Gæsterolle",
+            "rolePlaceHolder": "Vælg en rolle",
+            "showStockDescription": "Vis produktlagersaldo på gæstesiden",
+            "showStockLabel": "Vis lagerbalance",
+            "successDescription": "Gæsteindstillingerne blev opdateret",
+            "successTitle": "Gæsteindstillinger opdateret"
+        },
+        "title": "Indstillinger"
+    },
+    "statistic": {
+        "categories": "Tilgængelig kategori",
+        "categories_plural": "Tilgængelige kategorier",
+        "order": "Ordre",
+        "order_plural": "Ordrer",
+        "products": "Produkt",
+        "products_plural": "Produkter"
+    },
+    "stock": {
+        "available": "Lager: {{count}} stk.",
+        "availablePackages": "Lager: {{count}} pakke",
+        "availablePackages_plural": "Lager: {{count}} pakker",
+        "available_plural": "Lager: {{count}} stk.",
+        "unavailable": "Ikke tilgængelig"
+    },
+    "supplier": {
+        "fetchOrderErrorTitle": "Teknisk problem",
+        "incomingOrders": "Indgående ordrer",
+        "management": "Administrer",
+        "updateOrderErrorMessage": "Desværre kan vi ikke opdatere din ordre lige nu. Prøv igen senere.",
+        "updateOrderErrorTitle": "Ordren kunne ikke opdateres",
+        "updateOrderSuccessMessage": "Din ordre er nu blevet opdateret med succes.",
+        "updateOrderSuccessTitle": "Ordre opdateret med succes!"
+    },
+    "theme": {
+        "dark": "Mørk",
+        "light": "Lys"
+    },
+    "todo": {
+        "empty_description": "Stor ros til dig!",
+        "empty_title": "Alle opgaver er færdige",
+        "type": {
+            "info_title": "Besked",
+            "order_new_description": "Der er en ny ordre, som du skal håndtere",
+            "order_new_title": "Ny ordre"
+        }
+    },
+    "unitCode": {
+        "H87": "Stykke",
+        "XPK": "Pakke"
+    },
+    "users": {
+        "add": {
+            "alreadyExist": "Bruger med denne e-mail findes allerede.",
+            "description": "Indtast e-mailen på en bruger, du vil invitere",
+            "title": "Inviter et teammedlem"
+        },
+        "deleteConfirmationMessage": "Er du sikker på, at du vil slette brugeren?",
+        "deleteLabel": "Slet bruger",
+        "editGroups": "Administrer grupper",
+        "editRoles": "Administrer roller",
+        "emptyRolesDescription": "Ingen roller tilgængelige",
+        "getUsersError": "Brugere kunne ikke hentes, prøv igen senere",
+        "groupsDescription": "Disse eksisterende grupper bruges til at styre brugerrettigheder baseret på API-kald og er globale i tieraid. Det er ikke muligt at tilføje nye.",
+        "groupsLabel": "Grupper",
+        "guestAccessLabel": "Gæsteadgang",
+        "invitation": {
+            "deleteErrorTitle": "Invitationen kunne ikke slettes",
+            "errorTitle": "Kunne ikke sende invitation",
+            "pendingDescription": "Brugere, der ikke har reageret på din invitation.",
+            "pendingTitle": "Afventende invitationer",
+            "submitButton": "Invitér",
+            "successDescription": "En ny invitation er blevet sendt til '{{ email }}'",
+            "successTitle": "Invitation sendt"
+        },
+        "loadingMessage": "Henter brugere ...",
+        "manageMembersText": "Administrer medlemmer",
+        "members": "Medlemmer",
+        "personalDetailsLabel": "Personlige oplysninger",
+        "profile": "Brugerprofil",
+        "rightsLabel": "Brugerrettigheder",
+        "roleDescription": "Beskrivelse",
+        "roleLabel": "Navn",
+        "rolesAddNew": "Tilføj ny rolle",
+        "rolesDelete": "Slet rolle",
+        "rolesDescription": "Opret nye roller, som du kan genbruge i virksomheden",
+        "rolesEdit": "Rediger rolle",
+        "rolesLabel": "Roller",
+        "rolesRemovalConfirmButton": "Fjern rollen",
+        "rolesRemovalQuestion": "Er du sikker på, at du vil fjerne rollen?",
+        "search": "Søg efter bruger",
+        "title": "Brugere",
+        "userAdded": "Brugeren er tilføjet, da e-mail allerede er bekræftet.",
+        "verifiedLabel": "Verificeret"
+    }
+}

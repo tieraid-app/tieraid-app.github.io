@@ -1,0 +1,645 @@
+{
+    "404": {
+        "description": "Anteeksi, emme löytäneet etsimääsi sivua. Ehkä olet kirjoittanut URL-osoitteen väärin? Tarkista oikeinkirjoitus.",
+        "goBack": "Mene takaisin",
+        "title": "Hups, sivua ei löytynyt!"
+    },
+    "abbreviation": {
+        "sku": "SKU (Stock Keeping Unit) on yksilöllinen koodi, jota käytetään yksittäisten tuotteiden seuraamiseen ja hallintaan varastossa."
+    },
+    "activateUser": {
+        "activateAccount": "Aktivoi tili",
+        "activateAccountSuccessMessage": "Tilisi on aktivoitu. Sinut ohjataan nyt kirjautumissivulle.",
+        "activateAccountSuccessTitle": "Onnistunut aktivaatio!",
+        "activateUserSubTitle": "Syötä tietosi tilisi aktivointia varten",
+        "activateUserTitle": "Aloitetaan - Aktivoi tili",
+        "generalActivateAccountError": "Tätä tiliä ei voi aktivoida tällä hetkellä. Yritä uudelleen myöhemmin."
+    },
+    "address": {
+        "address": "Postiosoite",
+        "adress_line": "Toimitusosoite",
+        "city": "Kaupunki",
+        "co": "c/o",
+        "zipCode": "Postinumero"
+    },
+    "cart": {
+        "addToCart": "Lisää ostoskoriin",
+        "cart": "Ostoskorisi ({{ totalItems }})",
+        "contactDetails": "Yhteystiedot",
+        "empty": "Varastosi on tyhjä"
+    },
+    "category": {
+        "deleteDialogText": "Haluatko varmasti poistaa tämän kohteen?"
+    },
+    "checkout": {
+        "acceptedTermsAndCondition": "Hyväksyn ehdot ja säännöt",
+        "checkout": "Kassalle",
+        "checkoutButton": "Lähetä tilaus",
+        "city": "Kaupunki",
+        "defaultErrorMessage": "Valitettavasti tilausta ei voida tehdä, yritä myöhemmin uudelleen.",
+        "defaultErrorTitle": "Tilauksen epäonnistuminen",
+        "description": "Lisätiedot tilauksesta",
+        "name": "Koko nimi",
+        "orderConfirmation": "Tilauksesi on vahvistettu",
+        "orderConfirmationDetail": "Kiitos tilauksestasi! Saat vahvistussähköpostin tilauksen tiedoilla.",
+        "orderOverview": "Näytä tilauksen tiedot",
+        "postalCode": "Postinumero"
+    },
+    "company": {
+        "addressLabel": "Yritysten osoitteet",
+        "company": "Yritys",
+        "companyUpdateError": "Valitettavasti yrityksen tietoja ei voida päivittää, yritä myöhemmin uudelleen.",
+        "companyUpdateSuccess": "Yrityksen tiedot päivitetty onnistuneesti",
+        "email": "Yrityksen sähköposti",
+        "emailHelperText": "Tätä sähköpostia käytetään sisäisesti kaikkeen kommunikointiin tieraidilta",
+        "image": {
+            "none": "Ei logoa",
+            "remove": {
+                "submit": "Poista logo"
+            },
+            "upload": {
+                "description": "Voit joko ladata uuden logon päivittääksesi brändisi tai poistaa olemassa olevan logon, jos sitä ei tarvita.",
+                "submit": "Lataa uusi logo",
+                "title": "Yrityksen logo"
+            }
+        },
+        "invalidCompanyAddress": "Kadunnimi ja numero ovat pakollisia",
+        "invoiceAddress": "Yrityksen laskutusosoite",
+        "invoiceCheckbox": "Yrityksen osoite on sama kuin laskutusosoite",
+        "name": "Yrityksen nimi",
+        "number": "Yritystunnus",
+        "orderFrom": "Tilaus yritykseltä",
+        "postalAddress": "Postiosoite",
+        "settings": {
+            "optIn": {
+                "createError": "Mukautetun opt-in-viestin lisääminen epäonnistui",
+                "createSuccess": "Mukautettu opt-in-viesti lisätty onnistuneesti",
+                "description": "Voit mukauttaa asiakkaiden opt-in-viestin kassalla. Personoi teksti rohkaistaksesi asiakkaita tilaamaan uutiskirjeesi tai tarjouksesi. Varmista, että viesti on selkeä, kutsuva ja noudattaa tietosuojasäännöksiä.",
+                "title": "Opt-in"
+            },
+            "termsAndConditions": {
+                "createError": "Mukautetun käyttöehtoviestin lisääminen epäonnistui",
+                "createSuccess": "Mukautettu käyttöehtoviesti lisätty onnistuneesti",
+                "description": "Voit muokata kassalla näkyvää Ehdot-tekstiä. Päivitä maksuihin, toimituksiin ja palautuksiin liittyvät käytännöt yrityksellesi sopiviksi. Käytä selkeää kieltä ja lisää tarvittavat oikeudelliset ehdot suojaamaan sekä yritystäsi että asiakkaita.",
+                "title": "Ehdot"
+            }
+        }
+    },
+    "contact": {
+        "emailNotChangeableMessage": "Sähköpostia ei voi muuttaa, ota yhteyttä tukeen, jos haluat muuttaa sen.",
+        "firstName": "Etunimi",
+        "lastName": "Sukunimi",
+        "telephone": "Matkapuhelinnumero"
+    },
+    "country": {
+        "denmark": "Tanska",
+        "finland": "Suomi",
+        "norway": "Norja",
+        "sweden": "Ruotsi"
+    },
+    "dashboard": {
+        "title": "Hallintapaneeli",
+        "todoErrorMessage": "Valitettavasti tehtävää ei voitu päivittää. Yritä myöhemmin uudelleen.",
+        "todoTitle": "Suoritettavat tehtävät",
+        "welcome": "Hei, tervetuloa takaisin {{user}}"
+    },
+    "feedback": {
+        "confirmation": {
+            "preamble": "Palautteesi on meille erittäin arvokasta ja sitä käytetään sovelluksemme parantamiseen.",
+            "title": "Kiitos palautteestasi"
+        },
+        "description": "Kuvaus",
+        "done": "Valmis",
+        "error": {
+            "description": "Palauteen lähetys epäonnistui. Yritä myöhemmin uudelleen.",
+            "title": "Palautteen lähetys epäonnistui"
+        },
+        "leaveFeedback": "Anna palautetta",
+        "title": "Palaute",
+        "type": {
+            "bug": "Löytyi virhe",
+            "feature": "Uusi ominaisuus",
+            "improvement": "Parannusehdotus",
+            "label": "Mitä haluat kertoa meille?",
+            "support": "Tarvitsen tukea"
+        }
+    },
+    "forgotPassword": {
+        "description": "Anna sähköpostiosoitteesi, joka on rekisteröity Tieraid-sovellukseen, niin lähetämme ohjeet salasanan palauttamiseen",
+        "error": {
+            "description": "Meillä on ongelmia lähettää sinulle salasanan palautusta, yritä myöhemmin uudelleen",
+            "title": "Sähköpostin lähettäminen epäonnistui"
+        },
+        "primaryButtonLabel": "Lähetä ohjeet",
+        "success": {
+            "description": "Noudata linkkiä palauttaaksesi salasanasi.",
+            "title": "Sähköposti on lähetetty"
+        },
+        "title": "Ongelmia kirjautumisessa?"
+    },
+    "general": {
+        "active": "Aktiivinen",
+        "addressMaxLength": "Osoiterivi on liian pitkä, yritä lyhentää sitä (enintään {{count}} merkkiä)",
+        "addressMaxLength_plural": "",
+        "addressRequiredMessage": "Osoite vaaditaan",
+        "cancel": "Peruuta",
+        "choose": "Valitse",
+        "cityRequiredMessage": "Kaupunki vaaditaan",
+        "companyMaxLength": "Yrityksen nimi on liian pitkä (enintään {{count}} merkkiä)",
+        "companyMaxLength_plural": "",
+        "count": "Määrä: {{count}} kappale",
+        "countPackage": "Määrä: {{count}} paketti",
+        "countPackage_plural": "Määrä: {{count}} pakettia",
+        "count_plural": "Määrä: {{count}} kappaletta",
+        "date": "Päivämäärä",
+        "delete": "Poista",
+        "descriptionMinLengthMessage": "Kuvauksen vähimmäispituus {{count}} merkkiä",
+        "descriptionMinLengthMessage_plural": "Kuvauksen vähimmäispituus {{count}} merkkiä",
+        "edit": "Muokkaa",
+        "emailInvalidMessage": "Sähköpostiosoitteen on oltava kelvollinen sähköpostiosoite",
+        "emailRequiredMessage": "Sähköposti vaaditaan",
+        "error": {
+            "tryAgain": "Valitettavasti meillä on teknisiä ongelmia, yritä myöhemmin uudelleen."
+        },
+        "errorDefaultMessage": "Valitettavasti meillä on teknisiä ongelmia, yritä myöhemmin uudelleen.",
+        "field": {
+            "emailRequired": "Kirjoita kelvollinen sähköpostiosoite",
+            "required": "Tämä kenttä pitää täyttää."
+        },
+        "forgotPasswordMessage": "Unohditko salasanan?",
+        "fullNameRequiredMessage": "Koko nimi vaaditaan",
+        "goTo": "Kohteeseen",
+        "loginButton": "Kirjaudu sisään",
+        "loginErrorMessage": "Väärä sähköposti tai salasana",
+        "logout": "Kirjaudu ulos",
+        "name": "Nimi",
+        "new": "Uusi",
+        "newPassword": "Uusi salasana",
+        "noResultLabel": "Ei tuloksia",
+        "otherAccounts": "Näytä tilit",
+        "password": "Salasana",
+        "passwordRequiredMessage": "Salasana vaaditaan",
+        "phoneInvalidMessage": "Virheellinen puhelinnumero. Käytä kelvollista muotoa (esim. +46XX-XXXXXXXX).",
+        "postalCodeRequiredMessage": "Postinumero vaaditaan",
+        "repeatPassword": "Toista salasana",
+        "resend": "Lähetä uudelleen",
+        "save": "Tallenna",
+        "saveButtonLabel": "Tallenna",
+        "showLess": "Näytä vähemmän",
+        "showMore": "Näytä lisää",
+        "submit": "Lähettää",
+        "subtitle": "Anna tietosi alla",
+        "technicalErrorMessage": "Tekninen ongelma",
+        "termsRequiredMessage": "Ehdot vaaditaan",
+        "title": "Kirjaudu sisään {{company}}",
+        "welcome": "Hei, tervetuloa takaisin"
+    },
+    "inventory": {
+        "addButtonLabel": "Lisää tuote",
+        "addDocumentButton": "Lisää asiakirja",
+        "associateProductRole": {
+            "failed": {
+                "description": "Yritä myöhemmin uudelleen.",
+                "title": "Uuden roolin liittäminen tuotteeseen epäonnistui"
+            },
+            "success": {
+                "description": "Tuotteelle '{{product}}' on määritetty rooli '{{role}}'.",
+                "title": "Uusi rooli määritetty tuotteelle"
+            }
+        },
+        "cancelButtonLabel": "Peruuta",
+        "deleteDialogTextContent": "Oletko varma, että haluat poistaa tämän kohteen?",
+        "deleteDialogTitle": "Vahvista poisto",
+        "documents": "Asiakirjoja",
+        "editButtonLabel": "Muokkaa",
+        "editCategoriesLabel": "Muokkaa kategorioita",
+        "fetchError": "Tietoja ei voida ladata. Odota hetki ja yritä uudelleen.",
+        "formErrorCategory": "Kategoria on pakollinen",
+        "formErrorMessage": "Tuntematon virhe tapahtui. Yritä myöhemmin uudelleen.",
+        "formErrorName": "Nimi on pakollinen",
+        "general": "Yleinen",
+        "helperTextMinQuantityPerPallet": "Vähimmäismäärä, joka vaaditaan lavan käyttämiseksi.",
+        "helperTextQuantityPerPallet": "Varastossa on {{ count }} lava, joka sisältää tuotteita",
+        "helperTextQuantityPerPallet_plural": "Varastossa on {{ count }} lavaa, jotka sisältävät tuotteita",
+        "hidden": "Älä näytä luokkaa",
+        "include_children": "Sis. alakategoriat",
+        "labelCategories": "Kaikki kategoriat",
+        "labelCreated": "Luotu",
+        "labelImage": "Kuva",
+        "labelMinQuantityPerPallet": "Vähimmäismäärä per lava",
+        "labelName": "Nimi",
+        "labelOffers": "Tarjoukset",
+        "labelPallet": "Lavan sijainti",
+        "labelPicking": "Poimintasijainti",
+        "labelProductCategories": "Tuotekategoriat",
+        "labelProductData": "Tuotetiedot",
+        "labelProductImage": "Tuotekuva",
+        "labelProductInformation": "Tuotetiedot",
+        "labelProductTags": "Tuotetunnisteet",
+        "labelQuantityPerPallet": "Määrä per lava",
+        "labelSupplier": "Toimittaja",
+        "labelTags": "Tunnisteet",
+        "labelThreshold": "Alhaisen varaston raja",
+        "labelUnitCode": "Yksikkö",
+        "latest": "Uusin",
+        "maxValue": "{{field}} on oltava pienempi tai yhtä suuri kuin {{max}}",
+        "noImage": "Ei kuvaa",
+        "noSearchResultsFound": "Ei hakutuloksia",
+        "popular": "Suosittu",
+        "removeFilterLabel": "Tyhjennä suodatin",
+        "removeProductRole": {
+            "failed": {
+                "description": "Yritä myöhemmin uudelleen.",
+                "title": "Roolin '{{role}}' poistaminen epäonnistui"
+            },
+            "success": {
+                "description": "Tuote '{{product}}' ei ole enää liitetty rooliin '{{role}}'",
+                "title": "Rooli poistettu tuotteelta"
+            }
+        },
+        "rowsPerPageLabel": "Rivejä per sivu",
+        "searchPlaceholder": "Etsi tuotteita tunnuksen, nimen, merkin, tuotekoodin jne. perusteella.",
+        "sortLabel": "Järjestellä",
+        "sortSaveLabel": "Tallenna lajittelu",
+        "stockManagement": "Varastonhallinta",
+        "tablePaginationOf": "of",
+        "tagPlaceholder": "Kirjoita ja paina enter",
+        "title": "Tuotteeni",
+        "unSavedChanges": "Tekemäsi muutokset eivät ehkä tallennu.",
+        "updateButtonLabel": "Päivitä",
+        "uploadButtonLabel": "Lataa kuva"
+    },
+    "label": {
+        "address": "Osoite",
+        "brand": "Merkki",
+        "careOf": "c/o (care of, vapaaehtoinen)",
+        "category": "Kategoria",
+        "companyName": "Yrityksen nimi",
+        "country": "Maa",
+        "customer": "Asiakas",
+        "description": "Kuvaus",
+        "email": "Sähköposti",
+        "language": "Kieli",
+        "messages": "Viestit",
+        "orderDate": "Tilauspäivämäärä",
+        "pallets": "Lavat",
+        "productID": "Tuotetunnus",
+        "productName": "Tuotenimi",
+        "quantity": "Määrä",
+        "saveChanges": "Tallenna muutokset",
+        "sku": "SKU",
+        "telephone": "Puhelin",
+        "title": "Otsikko",
+        "user": "Käyttäjä",
+        "website": "Verkkosivusto"
+    },
+    "landing": {
+        "footer": {
+            "contactText": "Yhteystiedot"
+        },
+        "heroLayout": {
+            "contactButtonLabel": "Ota yhteyttä",
+            "subText": "Optimoi liiketoimintaasi vallankumouksellisella ostojen ja tilausten hallintajärjestelmällämme! Virtaviivaista, automatisoi ja yksinkertaista liiketoimintaprosessejasi maksimaalisen tuottavuuden ja kannattavuuden saavuttamiseksi.",
+            "systemText": "tilausjärjestelmä"
+        },
+        "processBox": {
+            "step1": {
+                "bodyText": "Aloita yhteistyö niiden yritysten kanssa, joiden kanssa olet jo yhteistyössä tänään, ja laita järjestelmä käyttöön yhdessä. Tämä vaihe vahvistaa yhteistyötäsi ja optimoi liiketoimintaasi.",
+                "title": "Kumppanuus"
+            },
+            "step2": {
+                "bodyText": "Integroimalla olemassa olevat tuotteet järjestelmään luot tehokkuutta ja avaat kasvumahdollisuuksia. Se tarjoaa kilpailuetuja ja parantaa asiakaspalvelua.",
+                "title": "Lisää ja muokkaa tuotteita"
+            },
+            "step3": {
+                "bodyText": "Aloita rekisteröimällä, pakkaamalla ja hallitsemalla tilauksia sujuvasti järjestelmässä. Tämä virtaviivaistaa tilausprosessiasi ja lisää tuottavuuttasi.",
+                "title": "Tilauksen käsittely"
+            },
+            "step4": {
+                "bodyText": "Merkitse yksinkertaisesti lähetetyt tilaukset järjestelmässä toimitetuiksi. Tämä antaa sinulle paremman katsauksen toimitustilanteeseen ja virtaviivaistaa varastonhallintaasi.",
+                "title": "Toimitus"
+            }
+        },
+        "screenshotBox": {
+            "listText": "Luo ja hallitse tilauksia",
+            "listText2": "Pääsy nykyisiin artikkelirekistereihin",
+            "listText3": "Tieraidin työtilauksilla saat täyden hallinnan kaikista käynnissä olevista ja suoritetuista tilauksista",
+            "title": "Helpompi tilauksen käsittely Tieraidin avulla"
+        }
+    },
+    "language": {
+        "danish": "Tanskan kieli",
+        "english": "Englanti",
+        "finnish": "Suomalainen",
+        "norwegian": "Norjan kieli",
+        "swedish": "Ruotsi"
+    },
+    "marketplace": {
+        "errorSupplierFetch": "Tuotteita ei voitu noutaa",
+        "productPage": {
+            "backButton": "Takaisin tuotteisiin",
+            "inStock": "Varastossa",
+            "modalButton": "Asetukset",
+            "outOfStock": "Loppu",
+            "productAccessLabel": "Tuotteen käyttöoikeus",
+            "productErrorMessage": "Valitettavasti emme voi tarjota tietoja tuotteista tällä hetkellä, yritä myöhemmin uudelleen.",
+            "productErrorTitle": "Tuotetta ei löytynyt",
+            "productRoleDescription": "Näytä kaikki roolit ja niiden vastaavat oikeudet valitulle tuotteelle",
+            "productRolePermissionLabel": "Hallitse tuoteoikeuksia",
+            "quantityTips": "Kärki! Voit myös syöttää haluamasi määrän.",
+            "quantityUnit": "kpl",
+            "roleErrorMessage": "Valitettavasti emme voi tarjota rooleja tällä hetkellä, yritä myöhemmin uudelleen. Tarkista, että rooleja on asetuksissa > käyttäjät.",
+            "roleErrorTitle": "Roolit eivät löydy",
+            "roles": "Roolit",
+            "stockStatus": "Tuotteen saatavuus"
+        },
+        "searchPlaceholder": "Etsi tuotteita tunnuksen, nimen, merkin jne. perusteella.",
+        "supplierFetchError": "Tekninen ongelma",
+        "title": "Saatavilla olevat tuotteet"
+    },
+    "message": {
+        "passwordNotMatch": "Salasana ei täsmää."
+    },
+    "microcopy": {
+        "fieldCannotBeEmpty": "Tämä kenttä ei voi olla tyhjä.",
+        "invalidUrl": "Tämä ei näytä kelvolliselta URL-osoitteelta. Yritä uudelleen."
+    },
+    "orders": {
+        "cancelOrderButtonLabel": "Peruuta tilaus",
+        "cancelOrderErrorMessage": "Valitettavasti emme voineet peruuttaa tilaustasi juuri nyt.",
+        "cancelOrderErrorTitle": "Peruutus epäonnistui",
+        "cancelOrderSuccessMessage": "Tilauksesi on peruutettu onnistuneesti.",
+        "cancelOrderSuccessTitle": "Tilaus peruutettu",
+        "cancelled": "Peruutettu",
+        "completed": "Valmis",
+        "createBackorderButtonLabel": "Luo takatilaus",
+        "createBackorderErrorMessage": "Takatilausta ei voitu luoda. Se voi johtua siitä, että määrä on liian pieni.",
+        "createBackorderSuccessMessage": "Takatilaus luotu tilausnumerolla",
+        "created": "Luotu",
+        "customerLabel": "Asiakas",
+        "delivered": "Toimitetaan",
+        "deliveredOrderButtonLabel": "Tilaus toimitettu",
+        "descriptionLabel": "Asiakkaan viesti",
+        "dialog": {
+            "cancelButtonText": "Peruuta",
+            "confirmButtonText": "Vahvista",
+            "content": "Haluatko varmasti peruuttaa tilauksen?",
+            "title": "Peruuta tilaus"
+        },
+        "editOrderButtonLabel": "Muokkaa tilausta",
+        "emptyBackorderInfoMessage": "Valitettavasti nykyisen tilauksen perusteella ei ole mahdollista luoda takatilauksia.",
+        "emptyBackorderInfoTitle": "Tilaus ei saa olla tyhjä",
+        "fetchOrderErrorMessage": "Valitettavasti emme tällä hetkellä pysty noutamaan tilauksiasi. Yritä myöhemmin uudelleen.",
+        "fetchOrderErrorTitle": "Tekninen ongelma",
+        "heading": {
+            "orderInfo": "Tilaustiedot"
+        },
+        "loggedInUserGuest": "Vieras",
+        "open": "Avoin",
+        "orderDateLabel": "Päiväys",
+        "orderDetailLabel": "Tilauksen tiedot",
+        "orderNumberLabel": "Tilausnro",
+        "orderProcessingLabel": "Tilausta Käsitellään",
+        "orderReference": "Tilaaja",
+        "orderShippedLabel": "Tilaus Lähetetty",
+        "partner": "Yhteistyökumppani",
+        "printLabel": "Tulosta tilaus",
+        "processing": "Hoidettu",
+        "product": "Tuote",
+        "productHeading": "Tuotteet",
+        "rest": "Jäljellä",
+        "searchOrderPlaceholder": "Hae tilausnumeroa, kuvausta tai tilauksen tilaa...",
+        "shipped": "Lähetetty",
+        "statusLabel": "Tila",
+        "subtractOriginalOrderLabel": "Vähennä alkuperäisestä tilauksesta",
+        "title": "Tilauksesi"
+    },
+    "partner": {
+        "activePartner": "Aktiivinen",
+        "addPartner": "Lisää kumppani",
+        "fetchPartnerErrorTitle": "Ei kumppania löytynyt",
+        "inactivePartner": "Ei aktiivinen",
+        "partnerDefaultErrorMessage": "Kumppania ei voitu lisätä. Tämä voi johtua siitä, että yritystunnus on virheellinen tai koska kumppani ei hyväksy pyyntöjä.",
+        "partnerLoading": "Etsitään kumppania. Pidä kiinni!",
+        "partnerNotFoundErrorMessage": "Valitettavasti kumppania ei voitu löytää",
+        "title": "Kumppani"
+    },
+    "partnership": {
+        "agreements": "Kumppanit",
+        "assortment": {
+            "description": "Aseta valikoima, jonka tämä kumppani voi nähdä. Se osoittaa saatavilla olevat tuotteet",
+            "title": "Saatavilla oleva valikoima"
+        },
+        "create": "Lisää kumppani",
+        "notification": {
+            "addMoreEmailLabel": "Lisää sähköposteja",
+            "failedAddDescription": "Yritä uudelleen hetken kuluttua.",
+            "failedAddTitle": "Sähköpostien lisääminen epäonnistui",
+            "failedRemovedDescription": "Yritä uudelleen hetken kuluttua.",
+            "failedRemvedTitle": "Sähköpostien poistaminen epäonnistui",
+            "lowStockDescription": "Kun tuote saavuttaa alhaisen kynnyksen, toimittaja lähettää sähköpostin alla luetelluille vastaanottajille. Voit lisätä yhden tai useamman sähköpostin vastaanottajan. Jos vastaanottajia ei lisätä ja olet tilannut ilmoitukset, sähköposti lähetetään yrityksesi sähköpostiosoitteeseen (joka on asetettu yrityksen asetuksissa).",
+            "lowStockSettingNotEnabledDescription": "Näyttää siltä, että asetus vähäisen varaston ilmoituksille ei ole käytössä.",
+            "lowStockSettingNotEnabledTitle": "Asetus ei ole käytössä",
+            "lowStockTitle": "Matala kynnys tapahtumat",
+            "orderDescription": "Kun käyttäjä tekee tilauksen yhdelle toimittajistasi, kopio sähköpostivahvistuksesta lähetetään myös alla luetelluille vastaanottajille. Voit lisätä yhden tai useamman sähköpostin vastaanottajan. Jos vastaanottajia ei lisätä ja olet tilannut ilmoitukset, sähköposti lähetetään yrityksesi sähköpostiosoitteeseen (joka on asetettu yrityksen asetuksissa).",
+            "orderTitle": "Uudet tilaustapahtumat",
+            "removeLabel": "Poista sähköposti",
+            "successfulAddDescription": "Lisätty '{{emails}}' ilmoitustyypille '{{type}}'",
+            "successfulAddTitle": "Onnistui",
+            "successfulRemovedDescription": "Poistettu '{{emails}}' ilmoitustyypille '{{type}}'",
+            "successfulRemovedTitle": "Poistaminen onnistui",
+            "title": "Ilmoitukset"
+        },
+        "order": {
+            "statistic": {
+                "description": "Täältä saat yhteenvedon tilattujen tuotteiden määrästä (oletusjakso on kuluva kuukausi)",
+                "item": {
+                    "count": "Määrät",
+                    "delivered_count": "Toimitettu",
+                    "id": "Tuotekoodi",
+                    "name": "Tuotteen nimi",
+                    "orders_count": "Tilaukset"
+                },
+                "loggedInUser": "Todennettu",
+                "loggedInUserGuest": "Vieras",
+                "searchPlaceholder": "Hae tuotteen nimen, merkin tai tuotetunnuksen mukaan...",
+                "selectInterval": "Valitse intervalli",
+                "title": "Tilaustilasto"
+            }
+        },
+        "products": {
+            "description": "Tässä ovat kaikki saatavilla olevat tuotteet, jotka kumppanisi voi nähdä",
+            "exportCsv": "Vie CSV-tiedostoon",
+            "none": "Ei saatavilla olevia tuotteita",
+            "palletsDescription": "Tuotteita on yhteensä {{ available }} ja jokaisella lavalla on {{ quantityPerPallet }} tuotetta, ja vähimmäismäärä per lava on {{ minimumQuantityPerPallet }}.",
+            "quantityDescription": "Yhteensä on {{ current }}, joista {{ reserved }} on suunniteltu toimitettavaksi, joten saatavilla on {{ available }} kpl.",
+            "title": "Saatavilla olevat tuotteet"
+        },
+        "settings": {
+            "customer": {
+                "description": "Kaikki asetukset, joita voit tehdä asiakkaana kumppaniasi vastaan, on lueteltu tässä",
+                "populateRolesInAllOrdersHelperText": "Käyttäjän rooli mainitaan viestissä tilauksen yhteydessä",
+                "populateRolesInAllOrdersLabel": "Lisää roolit tilauksiin",
+                "subscribeOnLowStockEventHelperText": "Kun aktivoitu, matalan varaston tapahtumat, jotka on lähetetty toimittajalta, välitetään yhdelle vastaanottajistasi.",
+                "subscribeOnLowStockEventLabel": "Tilaa tapahtumat matalasta varastosta"
+            },
+            "description": "Asetukset, jotka voit asettaa toimittajana tässä kumppanuudessa",
+            "failedDescription": "",
+            "failedTitle": "",
+            "showStockInformationHelperText": "Kun aktiivinen, näytetään saatavilla olevien tuotteiden määrä",
+            "showStockInformationLabel": "Näytä varastossa oleva määrä",
+            "title": "Asetukset"
+        },
+        "title": "Kumppani",
+        "viewDetails": "Näytä tiedot"
+    },
+    "profile": {
+        "changePassword": {
+            "currentPasswordLabel": "Nykyinen salasana",
+            "description": "Päivitä salasanasi säännöllisesti pitääksesi tilisi turvassa. Seuraa näitä ohjeita luodaksesi vahvan, uuden salasanan ja suojataksesi henkilökohtaiset tietosi.",
+            "failedTitle": "Salasanan vaihtaminen epäonnistui. Tarkista nykyinen salasanasi ja yritä uudelleen.",
+            "primaryButton": "Päivitä",
+            "successTitle": "Salasanasi on vaihdettu onnistuneesti!",
+            "title": "Vaihda salasana"
+        },
+        "detailsTitle": "Profiilin tiedot",
+        "image": {
+            "remove": {
+                "errorTitle": "Profiilikuvan poistaminen epäonnistui",
+                "submit": "Poista profiilikuva"
+            },
+            "upload": {
+                "description": "Lisää uusi profiilikuva tai poista nykyinen.",
+                "errorTitle": "Profiilikuvan poistaminen epäonnistui",
+                "submit": "Lisää uusi kuva",
+                "success": "Profiilikuva vaihdettiin onnistuneesti",
+                "title": "Profiilikuva"
+            }
+        },
+        "lastLogin": "Viimeisin kirjautuminen {{ date }}",
+        "security": "Turvallisuus",
+        "title": "Profiili",
+        "updateError": "Muutosten tallennus epäonnistui. Yritä uudelleen.",
+        "updateSuccess": "Muutoksesi on tallennettu onnistuneesti."
+    },
+    "resetPassword": {
+        "description": "Melkein valmis. Syötä uusi salasana ja kun se on vaihdettu, sinut kirjataan sisään.",
+        "error": {
+            "description": "Emme voineet vaihtaa salasanaasi, yritä myöhemmin uudelleen.",
+            "title": "Salasanan vaihtaminen epäonnistui"
+        },
+        "passwordNotMatchingMessage": "Varmista, että salasanasi täsmäävät",
+        "primaryButtonLabel": "Nollaa salasana",
+        "success": {
+            "description": "Salasanasi on vaihdettu, uudelleenohjataan kirjautumissivulle ...",
+            "title": "Salasana vaihdettu"
+        },
+        "title": "Nollaa salasanasi"
+    },
+    "settings": {
+        "guest": {
+            "description": "Ota käyttöön mahdollisuus antaa käyttäjien, joilla ei ole tiliä, tehdä tilauksia sovelluksesi kautta.",
+            "errorDescription": "Yritä myöhemmin uudelleen.",
+            "errorTitle": "Vieraiden asetusten päivittäminen epäonnistui",
+            "guestAccessDescription": "Salli käyttäjien ilman tiliä tehdä tilauksia.",
+            "guestAccessLabel": "Salli vierastilaus",
+            "guestImageDescription": "Näytä yrityksesi logo vierassivulla",
+            "guestImageLabel": "Näytä yrityksen logo",
+            "infoMessageNoRoles": "Lisää rooli ottaaksesi tämän toiminnon käyttöön",
+            "message": "Tiedotusviesti vieraskäyttäjälle",
+            "roleDescription": "Tuotteet, joilla on tämä liitetty rooli, näkyvät",
+            "roleLabel": "Vieraan rooli",
+            "rolePlaceHolder": "Valitse rooli",
+            "showStockDescription": "Näytä tuotteen varastosaldo vierassivulla",
+            "showStockLabel": "Näytä varastosaldo",
+            "successDescription": "Vieraan asetukset päivitettiin onnistuneesti",
+            "successTitle": "Vieraan asetukset päivitetty"
+        },
+        "title": "Asetukset"
+    },
+    "statistic": {
+        "categories": "Saavutettavissa oleva kategoria",
+        "categories_plural": "Saavutettavissa olevat kategoriat",
+        "order": "Tilaus",
+        "order_plural": "Tilaukset",
+        "products": "Tuote",
+        "products_plural": "Tuotteet"
+    },
+    "stock": {
+        "available": "Varasto: {{count}} kpl",
+        "availablePackages": "Varasto: {{count}} paketti",
+        "availablePackages_plural": "Varasto: {{count}} pakettia",
+        "available_plural": "Varasto: {{count}} kpl",
+        "unavailable": "Ei ole saatavilla"
+    },
+    "supplier": {
+        "fetchOrderErrorTitle": "Tekninen ongelma",
+        "incomingOrders": "Saapuvat tilaukset",
+        "management": "Hallitse",
+        "updateOrderErrorMessage": "Valitettavasti emme pysty päivittämään tilaustasi juuri nyt. Yritä myöhemmin uudelleen.",
+        "updateOrderErrorTitle": "Tilausta ei voitu päivittää",
+        "updateOrderSuccessMessage": "Tilauksesi on nyt päivitetty onnistuneesti.",
+        "updateOrderSuccessTitle": "Tilaus päivitetty onnistuneesti!"
+    },
+    "theme": {
+        "dark": "Tumma",
+        "light": "Valoa"
+    },
+    "todo": {
+        "empty_description": "Hienoa työtä!",
+        "empty_title": "Kaikki tehtävät suoritettu",
+        "type": {
+            "info_title": "Viesti",
+            "order_new_description": "Sinulle on uusi tilaus käsiteltäväksi",
+            "order_new_title": "Uusi tilaus"
+        }
+    },
+    "unitCode": {
+        "H87": "Kappale",
+        "XPK": "Paketti"
+    },
+    "users": {
+        "add": {
+            "alreadyExist": "Käyttäjä tällä sähköpostilla on jo olemassa.",
+            "description": "Kirjoita kutsuttavan käyttäjän sähköposti",
+            "title": "Kutsu tiimin jäsen"
+        },
+        "deleteConfirmationMessage": "Haluatko varmasti poistaa käyttäjän?",
+        "deleteLabel": "Poista käyttäjä",
+        "editGroups": "Hallitse ryhmiä",
+        "editRoles": "Hallitse rooleja",
+        "emptyRolesDescription": "Ei saatavilla olevia rooleja",
+        "getUsersError": "Käyttäjiä ei voitu hakea, yritä uudelleen myöhemmin",
+        "groupsDescription": "Nämä ryhmät, jotka ovat olemassa, ovat käytössä käyttäjän oikeuksien hallintaan API-kutsuihin perustuen, ja ne ovat globaaleja tieraidissa. Uusien ryhmien lisääminen ei ole mahdollista.",
+        "groupsLabel": "Ryhmät",
+        "guestAccessLabel": "Vieraspääsy",
+        "invitation": {
+            "deleteErrorTitle": "Kutsua ei voitu poistaa",
+            "errorTitle": "Kutsun lähettäminen epäonnistui",
+            "pendingDescription": "Käyttäjät, jotka eivät ole vastanneet kutsuusi.",
+            "pendingTitle": "Odottavat kutsut",
+            "submitButton": "Kutsu",
+            "successDescription": "Uusi kutsu on lähetetty osoitteeseen '{{ email }}'",
+            "successTitle": "Kutsu lähetetty"
+        },
+        "loadingMessage": "Haetaan käyttäjiä ...",
+        "manageMembersText": "Hallinnoi jäseniä",
+        "members": "Jäsenet",
+        "personalDetailsLabel": "Henkilötiedot",
+        "profile": "Käyttäjäprofiili",
+        "rightsLabel": "Käyttäjän oikeudet",
+        "roleDescription": "Kuvaus",
+        "roleLabel": "Nimi",
+        "rolesAddNew": "Lisää uusi rooli",
+        "rolesDelete": "Poista rooli",
+        "rolesDescription": "Luo uusia rooleja, joita voit käyttää yrityksessä",
+        "rolesEdit": "Muokkaa roolia",
+        "rolesLabel": "Roolit",
+        "rolesRemovalConfirmButton": "Poista rooli",
+        "rolesRemovalQuestion": "Haluatko varmasti poistaa roolin?",
+        "search": "Etsi käyttäjää",
+        "title": "Käyttäjät",
+        "userAdded": "Käyttäjä on lisätty, koska sähköposti on jo vahvistettu.",
+        "verifiedLabel": "Vahvistettu"
+    }
+}

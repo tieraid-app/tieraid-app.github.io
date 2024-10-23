@@ -1,0 +1,645 @@
+{
+    "404": {
+        "description": "Tyvärr kunde vi inte hitta sidan du letar efter. Du kanske har skrivit fel URL? Vänligen kontrollera att du har stavat rätt.",
+        "goBack": "Återvänd in i värmen",
+        "title": "Oops, sidan kunde tyvärr inte hittas!"
+    },
+    "abbreviation": {
+        "sku": "SKU (Stock Keeping Unit) är en unik kod som används för att spåra och hantera enskilda produkter i lager."
+    },
+    "activateUser": {
+        "activateAccount": "Aktivera kontot",
+        "activateAccountSuccessMessage": "Ditt konto har blivit aktiverat. Du kommer nu att omdirigeras till inloggningssidan.",
+        "activateAccountSuccessTitle": "Lyckad aktivering!",
+        "activateUserSubTitle": "Ange dina uppgifter för att aktivera ditt konto",
+        "activateUserTitle": "Aktivera ditt konto nedan",
+        "generalActivateAccountError": "Det här kontot går inte att aktivera för tillfället, var god och försök igen om en stund."
+    },
+    "address": {
+        "address": "Postadress",
+        "adress_line": "Leveransadress",
+        "city": "Stad",
+        "co": "c/o",
+        "zipCode": "Postnummer"
+    },
+    "cart": {
+        "addToCart": "Lägg i varukorg",
+        "cart": "Din Varukorg ({{ totalItems }})",
+        "contactDetails": "Kontaktuppgifter",
+        "empty": "Din varukorg är tom"
+    },
+    "category": {
+        "deleteDialogText": "Är du säker på att du vill ta bort kategorin?"
+    },
+    "checkout": {
+        "acceptedTermsAndCondition": "Jag accepterar villkoren och föreskrifterna",
+        "checkout": "Kassan",
+        "checkoutButton": "Lägg order",
+        "city": "Stad",
+        "defaultErrorMessage": "Tyvärr kan beställningen inte att genomföras, var god och försök igen om en stund.",
+        "defaultErrorTitle": "Ordern misslyckades",
+        "description": "Extra information om beställningen",
+        "name": "För- och efternamn",
+        "orderConfirmation": "Beställning bekräftad",
+        "orderConfirmationDetail": "Tack för din beställning! Du kommer att få en bekräftelse via e-post med detaljer om din beställning.",
+        "orderOverview": "Visa din beställning",
+        "postalCode": "Postnummer"
+    },
+    "company": {
+        "addressLabel": "Företagsadresser",
+        "company": "Företaget",
+        "companyUpdateError": "Tyvärr så kunde inte informationen uppdateras, var god och försök igen om en stund.",
+        "companyUpdateSuccess": "Företagsuppgifterna har nu uppdaterats.",
+        "email": "Företagets e-post",
+        "emailHelperText": "Denna e-post är för intern bruk för att skicka notifieringar från tieraid",
+        "image": {
+            "none": "Ingen logga",
+            "remove": {
+                "submit": "Ta bort logga"
+            },
+            "upload": {
+                "description": "Välj att antingen ladda upp en ny logga för att uppdatera ditt varumärke eller ta bort den befintliga om ingen logga behövs.",
+                "submit": "Ladda upp ny logga",
+                "title": "Företagslogga"
+            }
+        },
+        "invalidCompanyAddress": "Adressen måste bestå av gatuadress och nummer, E.g Postgatan 1",
+        "invoiceAddress": "Fakturaadress",
+        "invoiceCheckbox": "Företagets adress är samma som fakturadressen",
+        "name": "Företagsnamn",
+        "number": "Organisationsnummer",
+        "orderFrom": "Beställt från",
+        "postalAddress": "Postadress",
+        "settings": {
+            "optIn": {
+                "createError": "Misslyckades med att lägga till anpassat opt-in-meddelande",
+                "createSuccess": "Anpassat opt-in-meddelande har lagts till framgångsrikt",
+                "description": "Du kan anpassa opt-in-meddelandet för kunder vid kassan. Anpassa texten för att uppmuntra kunder att prenumerera på dina nyhetsbrev eller erbjudanden. Se till att meddelandet är tydligt, inbjudande och följer integritetsregler.",
+                "title": "Opt-in"
+            },
+            "termsAndConditions": {
+                "createError": "Misslyckades med att lägga till anpassat meddelande för villkor",
+                "createSuccess": "Anpassat meddelande för villkor har lagts till framgångsrikt",
+                "description": "Du kan anpassa texten för Villkor och bestämmelser vid kassan. Uppdatera betalnings-, leverans- och returpolicyer så att de passar ditt företag. Använd tydligt språk och inkludera viktiga juridiska krav för att skydda både dig och dina kunder.",
+                "title": "Villkor och bestämmelser"
+            }
+        }
+    },
+    "contact": {
+        "emailNotChangeableMessage": "The email cannot be changed, please contact support if you want to change it.",
+        "firstName": "Förnamn",
+        "lastName": "Efternamn",
+        "telephone": "Mobilnummer"
+    },
+    "country": {
+        "denmark": "Danmark",
+        "finland": "Finland",
+        "norway": "Norge",
+        "sweden": "Sverige"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "todoErrorMessage": "Tyvärr så kan inte uppgiften att uppdateras. Var god och försök igen om en stund.",
+        "todoTitle": "Att göra",
+        "welcome": "Hej, välkommen tillbaka {{user}}!"
+    },
+    "feedback": {
+        "confirmation": {
+            "preamble": "Din feedback är mycket värdefull för oss och används för att förbättra vår app.",
+            "title": "Tack för din feedback"
+        },
+        "description": "Beskrivning",
+        "done": "Klar",
+        "error": {
+            "description": "Kunde inte skicka feedback. Försök igen senare.",
+            "title": "Misslyckades med att skicka feedback"
+        },
+        "leaveFeedback": "Lämna feedback",
+        "title": "Feedback",
+        "type": {
+            "bug": "Hittade ett fel",
+            "feature": "Ny funktion",
+            "improvement": "Förbättringsförslag",
+            "label": "Vad vill du berätta för oss?",
+            "support": "Jag behöver support"
+        }
+    },
+    "forgotPassword": {
+        "description": "Ange din e-post registrerad i Tieraid-appen så skickar vi instruktioner om hur du återställer ditt lösenord",
+        "error": {
+            "description": "Vi har problem med att skicka en återställning av lösenordet till dig, försök igen senare",
+            "title": "Misslyckades att skicka e-post"
+        },
+        "primaryButtonLabel": "Skicka instruktioner",
+        "success": {
+            "description": "Följ länken för att återställa ditt lösenord.",
+            "title": "Ett e-postmeddelande har skickats"
+        },
+        "title": "Problem att logga in?"
+    },
+    "general": {
+        "active": "Aktiv",
+        "addressMaxLength": "Addressraden är för långt, testa att korta ned (max {{count}} tecken)",
+        "addressMaxLength_plural": "",
+        "addressRequiredMessage": "Adressen måste bestå av gatuadress och nummer, E.g Postgatan 1",
+        "cancel": "Avbryt",
+        "choose": "Välj",
+        "cityRequiredMessage": "Stad är obligatoriskt",
+        "companyMaxLength": "Företagsnamnet är för långt (max {{count}} tecken)",
+        "companyMaxLength_plural": "",
+        "count": "Antal: {{count}} st",
+        "countPackage": "Antal: {{count}} förpackning",
+        "countPackage_plural": "Antal: {{count}} förpackningar",
+        "count_plural": "Antal: {{count}} st",
+        "date": "Datum",
+        "delete": "Ta bort",
+        "descriptionMinLengthMessage": "Minsta antalet tecken är {{count}} tecken",
+        "descriptionMinLengthMessage_plural": "Minsta antalet tecken är {{count}} tecken",
+        "edit": "Redigera",
+        "emailInvalidMessage": "Ogiltig mejladress använd formatet din@epostadress.se",
+        "emailRequiredMessage": "Fyll i mejladress",
+        "error": {
+            "tryAgain": "Vi har förnärvarande tekniska problem, var god och försök igen om en stund."
+        },
+        "errorDefaultMessage": "Vi har förnärvarande tekniska problem, var god och försök igen om en stund",
+        "field": {
+            "emailRequired": "Var god skriv in ett giltig e-postadress",
+            "required": "Detta fält är obligatoriskt."
+        },
+        "forgotPasswordMessage": "Glömt lösenord?",
+        "fullNameRequiredMessage": "Fullständigt namn är obligatoriskt",
+        "goTo": "Till",
+        "loginButton": "Logga in",
+        "loginErrorMessage": "Fel e-post eller lösenord",
+        "logout": "Logga ut",
+        "name": "Namn",
+        "new": "Ny",
+        "newPassword": "Nytt lösenord",
+        "noResultLabel": "Inga resultat",
+        "otherAccounts": "Andra konton",
+        "password": "Lösenord",
+        "passwordRequiredMessage": "Fyll i lösenord",
+        "phoneInvalidMessage": "Ogiltigt telefonnummer. Använd ett giltigt format (t.ex. +46XX-XXXXXXXX).",
+        "postalCodeRequiredMessage": "Postnummer är obligatoriskt",
+        "repeatPassword": "Upprepa lösenord",
+        "resend": "Skicka igen",
+        "save": "Spara",
+        "saveButtonLabel": "Spara ändringar",
+        "showLess": "Visa färre",
+        "showMore": "Visa fler",
+        "submit": "Skicka",
+        "subtitle": "Skriv in dina inloggningsuppgifter",
+        "technicalErrorMessage": "Tekniskt fel",
+        "termsRequiredMessage": "Vilkor är obligatoriskt",
+        "title": "Logga in hos {{company}}",
+        "welcome": "Hej, välkommen tillbaka!"
+    },
+    "inventory": {
+        "addButtonLabel": "Lägg till produkt",
+        "addDocumentButton": "Lägg till dokument",
+        "associateProductRole": {
+            "failed": {
+                "description": "Vänligen försök igen senare.",
+                "title": "Misslyckades med att tilldela ny roll till produkt"
+            },
+            "success": {
+                "description": "Produkten '{{product}}' har tilldelats rollen '{{role}}'.",
+                "title": "Ny roll tilldelad till produkt"
+            }
+        },
+        "cancelButtonLabel": "Avbryt",
+        "deleteDialogTextContent": "Är du säker på att du vill ta bort det här produkten?",
+        "deleteDialogTitle": "Bekräfta borttagning",
+        "documents": "Dokument",
+        "editButtonLabel": "Ändra",
+        "editCategoriesLabel": "Hantera kategorier",
+        "fetchError": "Det gick inte att ladda data. Vänta en stund och försök igen.",
+        "formErrorCategory": "Kategori är obligatoriskt",
+        "formErrorMessage": "Ett okänt fel har uppstått. Vänligen försök igen senare",
+        "formErrorName": "Namn är obligatoriskt",
+        "general": "Generell",
+        "helperTextMinQuantityPerPallet": "Den minimala kvantitet som krävs för att använda en pall.",
+        "helperTextQuantityPerPallet": "Det finns {{ count }} pall i lagret för produkterna",
+        "helperTextQuantityPerPallet_plural": "Det finns {{ count }} pallar i lagret för produkterna",
+        "hidden": "Visa ej kategorin",
+        "include_children": "Inkl. undermappar",
+        "labelCategories": "Alla Kategorier",
+        "labelCreated": "Skapad",
+        "labelImage": "Bild",
+        "labelMinQuantityPerPallet": "Minsta kvantitet per pall",
+        "labelName": "Namn",
+        "labelOffers": "Erbjudande",
+        "labelPallet": "Pallplats",
+        "labelPicking": "Plockplats",
+        "labelProductCategories": "Produktkategori",
+        "labelProductData": "Produktdata",
+        "labelProductImage": "Produktbild",
+        "labelProductInformation": "Produktinformation",
+        "labelProductTags": "Produkttaggar",
+        "labelQuantityPerPallet": "Kvantitet per pall",
+        "labelSupplier": "Leverantör",
+        "labelTags": "Taggar",
+        "labelThreshold": "Låg lagertröskel",
+        "labelUnitCode": "Enhet",
+        "latest": "Senast",
+        "maxValue": "{{field}} måste vara mindre eller lika med {{max}}",
+        "noImage": "Bild saknas",
+        "noSearchResultsFound": "Inga sökresultat hittades",
+        "popular": "Populär",
+        "removeFilterLabel": "Rensa alla",
+        "removeProductRole": {
+            "failed": {
+                "description": "Vänligen försök igen senare.",
+                "title": "Misslyckades med att ta bort rollen '{{role}}'"
+            },
+            "success": {
+                "description": "Produkten '{{product}}' är inte längre tilldelad rollen '{{role}}'",
+                "title": "Rollen avsatt från produkt"
+            }
+        },
+        "rowsPerPageLabel": "Rader per sida",
+        "searchPlaceholder": "Sök efter produkter med id, namn, varumärke, artikelnummer, etc.",
+        "sortLabel": "Sortera",
+        "sortSaveLabel": "Spara sortering",
+        "stockManagement": "Lager",
+        "tablePaginationOf": "av",
+        "tagPlaceholder": "Skriv och tryck enter",
+        "title": "Mina produkter",
+        "unSavedChanges": "Ändringar som du gjort kanske inte sparas.",
+        "updateButtonLabel": "Uppdatera",
+        "uploadButtonLabel": "Ladda upp bild"
+    },
+    "label": {
+        "address": "Adress",
+        "brand": "Märke",
+        "careOf": "c/o (care of, valfritt)",
+        "category": "Kategori",
+        "companyName": "Företagsnamn",
+        "country": "Land",
+        "customer": "Kund",
+        "description": "Beskrivning",
+        "email": "E-post",
+        "language": "Språk",
+        "messages": "Meddelanden",
+        "orderDate": "Beställningsdatum",
+        "pallets": "Pallar",
+        "productID": "Produkt-ID",
+        "productName": "Produktnamn",
+        "quantity": "Kvantitet",
+        "saveChanges": "Spara ändringar",
+        "sku": "SKU",
+        "telephone": "Telefon",
+        "title": "Titel",
+        "user": "Användare",
+        "website": "Webbplats"
+    },
+    "landing": {
+        "footer": {
+            "contactText": "Kontaktinformation"
+        },
+        "heroLayout": {
+            "contactButtonLabel": "Kom i kontakt",
+            "subText": "Optimera din verksamhet med vår revolutionerande inköpshanterings- och orderhanteringssystem! Effektivisera, automatisera och förenkla din affärsprocess för maximal produktivitet och lönsamhet.",
+            "systemText": "orderhanteringssystem"
+        },
+        "processBox": {
+            "step1": {
+                "bodyText": "Etablera samarbeten med de företag ni redan samarbetar med idag och ta sedan systemet i bruk tillsammans. Detta steg kommer stärka era samarbeten och optimera er verksamhet.",
+                "title": "Partnerskap"
+            },
+            "step2": {
+                "bodyText": "Genom att integrera befintliga produkter i systemet skapar du effektivitet och öppnar möjligheter för tillväxt. Det ger konkurrensfördelar och förbättrad kundservice.",
+                "title": "Lägg till och redigera produkter"
+            },
+            "step3": {
+                "bodyText": "Kom igång med att registrera, packa och hantera ordrar smidigt i systemet. Detta kommer att effektivisera er orderprocess och öka er produktivitet.",
+                "title": "Orderhantering"
+            },
+            "step4": {
+                "bodyText": "Bocka enkelt av de levererade order i systemet när de är skickad. Detta ger er bättre översikt över leveransstatus och effektiviserar er lagerhantering.",
+                "title": "Leverans"
+            }
+        },
+        "screenshotBox": {
+            "listText": "Skapa och hantera ordrar",
+            "listText2": "Tillgång till aktuella artikelregister",
+            "listText3": "Med Tieraid arbetsorder får du full koll på alla pågående och utförda ordrar",
+            "title": "Smidigare orderhantering med Tieraid"
+        }
+    },
+    "language": {
+        "danish": "Danska",
+        "english": "Engelska",
+        "finnish": "Finska",
+        "norwegian": "Norska",
+        "swedish": "Svenska"
+    },
+    "marketplace": {
+        "errorSupplierFetch": "Produkter kunde inte hämtas",
+        "productPage": {
+            "backButton": "Tillbaka till produkter",
+            "inStock": "Finns i lager",
+            "modalButton": "Inställningar",
+            "outOfStock": "Ej i lager",
+            "productAccessLabel": "Produktåtkomst",
+            "productErrorMessage": "Tyvärr kunde vi inte ge någon produktinformation just nu, försök igen senare.",
+            "productErrorTitle": "Produkt hittades inte",
+            "productRoleDescription": "Här kan du se alla roller och deras motsvarande behörigheter för den valda produkten.",
+            "productRolePermissionLabel": "Hantera produktbehörighet",
+            "quantityTips": "Tips! Du kan också skriva in önskad mängd.",
+            "quantityUnit": "st",
+            "roleErrorMessage": "Tyvärr kunde vi inte tillhandahålla några roller för tillfället, försök igen senare.",
+            "roleErrorTitle": "Inga roller hittades",
+            "roles": "Roller",
+            "stockStatus": "Lagersaldo"
+        },
+        "searchPlaceholder": "Sök efter produkter med id, namn, varumärke, etc.",
+        "supplierFetchError": "Vi har förnärvarande tekniska problem. Vänligen försök igen senare.",
+        "title": "Tillgängliga produkter"
+    },
+    "message": {
+        "passwordNotMatch": "Lösenordet matchar inte."
+    },
+    "microcopy": {
+        "fieldCannotBeEmpty": "Det här fältet får inte vara tomt.",
+        "invalidUrl": "Det ser inte ut som en giltig URL. Försök igen."
+    },
+    "orders": {
+        "cancelOrderButtonLabel": "Avbryt order",
+        "cancelOrderErrorMessage": "Vi kunde inte annullera din order just nu. Vänligen försök igen senare.",
+        "cancelOrderErrorTitle": "Anullering misslyckades",
+        "cancelOrderSuccessMessage": "Din order har nu annullerats.",
+        "cancelOrderSuccessTitle": "Order anullerad",
+        "cancelled": "Avbruten",
+        "completed": "Klar",
+        "createBackorderButtonLabel": "Skapa restorder",
+        "createBackorderErrorMessage": "Restorder kunde inte skapas. Det kan bero på att kvantitet är för lågt.",
+        "createBackorderSuccessMessage": "Restorder skapad med ordernummer",
+        "created": "Skapad",
+        "customerLabel": "Kund",
+        "delivered": "Levererad",
+        "deliveredOrderButtonLabel": "Beställning levererad",
+        "descriptionLabel": "Meddelande från kund",
+        "dialog": {
+            "cancelButtonText": "Gå tillbaka",
+            "confirmButtonText": "Ja",
+            "content": "Är du säker på att du vill avbryta ordern?",
+            "title": "Avbryt order"
+        },
+        "editOrderButtonLabel": "Ändra order",
+        "emptyBackorderInfoMessage": "Tyvärr går det inte att skapa en restorder utifrån den aktuella ordern.",
+        "emptyBackorderInfoTitle": "Ordern får inte vara tomt",
+        "fetchOrderErrorMessage": "Tyvärr kan vi för tillfället inte hämta dina beställningar. Vänligen försök igen senare.",
+        "fetchOrderErrorTitle": "Tekniskt fel",
+        "heading": {
+            "orderInfo": "Beställningsinformation"
+        },
+        "loggedInUserGuest": "Gäst",
+        "open": "Öppen",
+        "orderDateLabel": "Datum",
+        "orderDetailLabel": "Order info",
+        "orderNumberLabel": "Ordernummer",
+        "orderProcessingLabel": "Order Behandlas",
+        "orderReference": "Beställare",
+        "orderShippedLabel": "Order Skickad",
+        "partner": "Partner",
+        "printLabel": "Skriv ut order",
+        "processing": "Behandlas",
+        "product": "Produkt",
+        "productHeading": "Produkter",
+        "rest": "Rest",
+        "searchOrderPlaceholder": "Sök på ordernummer, beskrivning eller status...",
+        "shipped": "Skickat",
+        "statusLabel": "Status",
+        "subtractOriginalOrderLabel": "Subtrahera från den ursprungliga ordern",
+        "title": "Dina ordrar"
+    },
+    "partner": {
+        "activePartner": "Aktiv",
+        "addPartner": "Lägg till partner",
+        "fetchPartnerErrorTitle": "Partner kunde inte hittas",
+        "inactivePartner": "Inaktiv",
+        "partnerDefaultErrorMessage": "Partner kunde inte läggas till. Det kan bero på att organisationsnumret är fel eller att partner inte tillåter förfrågan.",
+        "partnerLoading": "Söker efter partner. Tack för ditt tålamod!",
+        "partnerNotFoundErrorMessage": "Tyvärr så kunde ingen partner hittas.",
+        "title": "Partner"
+    },
+    "partnership": {
+        "agreements": "Partners",
+        "assortment": {
+            "description": "Välj vilka sortiment denna partner ska få tillgång till. Det bestämmer också vilka produkter som kommer finnas som tillgängliga",
+            "title": "Tillgänliga sortiment"
+        },
+        "create": "Lägg till partner",
+        "notification": {
+            "addMoreEmailLabel": "Lägg till fler e-postadresser",
+            "failedAddDescription": "Försök igen om en liten stund.",
+            "failedAddTitle": "Misslyckades med att lägga till e-postadresser",
+            "failedRemovedDescription": "Försök igen om en liten stund.",
+            "failedRemvedTitle": "Misslyckades med att ta bort e-postadresser",
+            "lowStockDescription": "När en produkt når en låg tröskel, kommer ett e-postmeddelande att skickas från leverantören till mottagarna nedan. Du kan lägga till en eller flera e-postmottagare. Om inga mottagare läggs till och du har prenumererat på aviseringar, kommer e-postmeddelandet att skickas till din företags-e-postadress (den som är inställd under Företagsinställningar).",
+            "lowStockSettingNotEnabledDescription": "Det verkar som att inställningen för låga lagernotifikationer inte är aktiverad.",
+            "lowStockSettingNotEnabledTitle": "Inställningen är inte aktiverad",
+            "lowStockTitle": "Låga tröskelhändelser",
+            "orderDescription": "När en användare skapar en beställning hos en av dina leverantörer, kommer en kopia av e-postbekräftelsen också att skickas till mottagarna nedan. Du kan lägga till en eller flera e-postmottagare. Om inga mottagare läggs till och du har prenumererat på aviseringar, kommer e-postmeddelandet att skickas till din företags-e-postadress (den som är inställd under Företagsinställningar).",
+            "orderTitle": "Nya beställningshändelser",
+            "removeLabel": "Ta bort e-postadress",
+            "successfulAddDescription": "Lade till '{{emails}}' för notifikationstyp '{{type}}'",
+            "successfulAddTitle": "Framgång",
+            "successfulRemovedDescription": "Tog bort '{{emails}}' för notifikationstyp '{{type}}'",
+            "successfulRemovedTitle": "Borttagning framgångsrik",
+            "title": "Aviseringar"
+        },
+        "order": {
+            "statistic": {
+                "description": "Här kan ni hämta ut relevant order statistik på produkterna som varit beställda (standard är innevarande månad)",
+                "item": {
+                    "count": "Antal",
+                    "delivered_count": "Levererade",
+                    "id": "Produktid",
+                    "name": "Produktnamn",
+                    "orders_count": "Antal ordrar"
+                },
+                "loggedInUser": "Autentiserad",
+                "loggedInUserGuest": "Gäst",
+                "searchPlaceholder": "Sök på produktnamn, märke eller produkt id...",
+                "selectInterval": "Välj intervall",
+                "title": "Orderstatistik"
+            }
+        },
+        "products": {
+            "description": "Här listas alla produkter som finns tillgängliga för din partner",
+            "exportCsv": "Exportera till CSV-fil",
+            "none": "Det finns inga tillgängliga produkter",
+            "palletsDescription": "Det finns totalt {{ available }} produkter och varje pall rymmer {{ quantityPerPallet }} produkter och minsta kvantitet per pall är {{ minimumQuantityPerPallet }}.",
+            "quantityDescription": "Det finns totalt {{ current }}, varav {{ reserved }} är planerade för leverans, så tillgängligheten är {{ available }} st.",
+            "title": "Tillgängliga produkter"
+        },
+        "settings": {
+            "customer": {
+                "description": "Här listas alla inställningar du kan göra som kund mot din partner",
+                "populateRolesInAllOrdersHelperText": "Användarens roll kommer att läggas med i meddelandet vid beställningar",
+                "populateRolesInAllOrdersLabel": "Lägg på roller vid beställningar",
+                "subscribeOnLowStockEventHelperText": "När aktiverat kommer händelser om lågt lager skickade av leverantören att vidarebefordras till en av dina mottagare.",
+                "subscribeOnLowStockEventLabel": "Prenumerera på händelser om lågt lager"
+            },
+            "description": "Inställngar som leverantör för detta partnerskap",
+            "failedDescription": "",
+            "failedTitle": "",
+            "showStockInformationHelperText": "När denna är aktiv så syns lagersaldo hos dina kunder för tillgängliga produkter",
+            "showStockInformationLabel": "Visa lagersaldo för produkter",
+            "title": "Inställningar"
+        },
+        "title": "Partner",
+        "viewDetails": "Visa detaljer"
+    },
+    "profile": {
+        "changePassword": {
+            "currentPasswordLabel": "Nuvarande lösenord",
+            "description": "Uppdatera ditt lösenord regelbundet för att hålla ditt konto säkert. Följ dessa steg för att skapa ett starkt, nytt lösenord och skydda din personliga information.",
+            "failedTitle": "Misslyckades med att ändra lösenordet. Kontrollera ditt nuvarande lösenord och försök igen.",
+            "primaryButton": "Uppdatera",
+            "successTitle": "Ditt lösenord har ändrats framgångsrikt!",
+            "title": "Byt lösenord"
+        },
+        "detailsTitle": "Profildetaljer",
+        "image": {
+            "remove": {
+                "errorTitle": "Borttagning av profilbild misslyckades",
+                "submit": "Ta bort profilbild"
+            },
+            "upload": {
+                "description": "Lägg till en ny profilbild eller ta bort den befintliga.",
+                "errorTitle": "Borttagning av profilbild misslyckades",
+                "submit": "Lägg till ny bild",
+                "success": "Profilbilden har ändrats framgångsrikt",
+                "title": "Profilbild"
+            }
+        },
+        "lastLogin": "Senaste inloggning {{ date }}",
+        "security": "Säkerhet",
+        "title": "Min profil",
+        "updateError": "Misslyckades med att spara ändringarna. Försök igen.",
+        "updateSuccess": "Dina ändringar har sparats framgångsrikt."
+    },
+    "resetPassword": {
+        "description": "Nästan klar. Ange ett nytt lösenord och när det är bytt kommer du att bli inloggad.",
+        "error": {
+            "description": "Vi kunde inte ändra ditt lösenord, vänligen försök igen senare.",
+            "title": "Misslyckades att ändra lösenord"
+        },
+        "passwordNotMatchingMessage": "Kontrollera att ditt lösenord matchar",
+        "primaryButtonLabel": "Återställ lösenord",
+        "success": {
+            "description": "Ditt lösenord har ändrats, omdirigerar till inloggningssidan ...",
+            "title": "Lösenord ändrat"
+        },
+        "title": "Återställ ditt lösenord"
+    },
+    "settings": {
+        "guest": {
+            "description": "Aktivera möjlighet att låta användare som inte har ett konto att lägga beställningar genom din app.",
+            "errorDescription": "Försök igen senare.",
+            "errorTitle": "Misslyckades med att uppdatera gästinställningar",
+            "guestAccessDescription": "Tillåt användare utan konto att lägga beställningar.",
+            "guestAccessLabel": "Tillåt gästköp",
+            "guestImageDescription": "Visa din företagslogotyp på gäst sidan",
+            "guestImageLabel": "Visa företagslogotyp",
+            "infoMessageNoRoles": "Lägg till en roll för att aktivera denna funktionalitet",
+            "message": "Informationsmeddelande till gästanvändare",
+            "roleDescription": "Produkter med denna associerade roll kommer att vara synliga",
+            "roleLabel": "Gästroll",
+            "rolePlaceHolder": "Välj en roll",
+            "showStockDescription": "Visa produkt lagersaldo på gäst sidan",
+            "showStockLabel": "Visa lagersaldo",
+            "successDescription": "Gästinställningarna uppdaterades framgångsrikt",
+            "successTitle": "Gästinställningar uppdaterade"
+        },
+        "title": "Inställningar"
+    },
+    "statistic": {
+        "categories": "Nåbar kategori",
+        "categories_plural": "Nåbara kategorier",
+        "order": "Order",
+        "order_plural": "Ordrar",
+        "products": "Produkt",
+        "products_plural": "Produkter"
+    },
+    "stock": {
+        "available": "Lagersaldo: {{count}} st",
+        "availablePackages": "Lagersaldo: {{count}} förpackning",
+        "availablePackages_plural": "Lagersaldo: {{count}} förpackningar",
+        "available_plural": "Lagersaldo: {{count}} st",
+        "unavailable": "Inte tillgänglig"
+    },
+    "supplier": {
+        "fetchOrderErrorTitle": "Tekniskt fel",
+        "incomingOrders": "Inkommande ordrar",
+        "management": "Hantera",
+        "updateOrderErrorMessage": "Tyvärr kan vi inte uppdatera din order just nu. Vänligen försök igen senare.",
+        "updateOrderErrorTitle": "Uppdatering av ordern misslyckades!",
+        "updateOrderSuccessMessage": "Din order har nu uppdaterats.",
+        "updateOrderSuccessTitle": "Uppdatering av ordern lyckades!"
+    },
+    "theme": {
+        "dark": "Mörk",
+        "light": "Ljus"
+    },
+    "todo": {
+        "empty_description": "Starkt jobbat!",
+        "empty_title": "Alla uppgifter avklarade",
+        "type": {
+            "info_title": "Meddelande",
+            "order_new_description": "Det har kommit in en ny order",
+            "order_new_title": "Ny order"
+        }
+    },
+    "unitCode": {
+        "H87": "Styck",
+        "XPK": "Förpackning"
+    },
+    "users": {
+        "add": {
+            "alreadyExist": "Användare med denna e-postadress finns redan.",
+            "description": "Skriv in en e-postadress för den användare du vill bjuda in",
+            "title": "Bjud in en användare"
+        },
+        "deleteConfirmationMessage": "Är du säker på att du vill ta bort användare?",
+        "deleteLabel": "Ta bort användare",
+        "editGroups": "Hantera grupper",
+        "editRoles": "Hantera roller",
+        "emptyRolesDescription": "Inga roller tillgängliga",
+        "getUsersError": "Inga användare kunde hämtas, var god och försök igen om en stund",
+        "groupsDescription": "Dessa grupper som finns användas för att styra vilka rättigheter en användare har utifrån API anrop och är globalt i tieraid och går inte att lägga till nya",
+        "groupsLabel": "Grupper",
+        "guestAccessLabel": "Gästtillgång",
+        "invitation": {
+            "deleteErrorTitle": "Inbjudan kunde inte tas bort",
+            "errorTitle": "Misslyckades med att skicka inbjudan",
+            "pendingDescription": "Användare som inte har svarat på inbjudan.",
+            "pendingTitle": "Väntande förfrågningar",
+            "submitButton": "Bjud in",
+            "successDescription": "En ny inbjudan har skickats till '{{ email }}'.",
+            "successTitle": "Inbjudan skickad"
+        },
+        "loadingMessage": "Hämtar användare ...",
+        "manageMembersText": "Hantera medlemmar",
+        "members": "Medlemmar",
+        "personalDetailsLabel": "Personliga uppgifter",
+        "profile": "Användarprofil",
+        "rightsLabel": "Rättigheter",
+        "roleDescription": "Beskrivning",
+        "roleLabel": "Namn",
+        "rolesAddNew": "Lägg till ny roll",
+        "rolesDelete": "Ta bort roll",
+        "rolesDescription": "Här kan du skapa nya roller som ni kan återanvända i företaget",
+        "rolesEdit": "Editera roll",
+        "rolesLabel": "Roller",
+        "rolesRemovalConfirmButton": "Ta bort rollen",
+        "rolesRemovalQuestion": "Är du säker att du vill ta bort rollen?",
+        "search": "Sök användare",
+        "title": "Användare",
+        "userAdded": "Användare har lagts till eftersom e-posten redan är verifierad.",
+        "verifiedLabel": "Verifierad"
+    }
+}

@@ -1,0 +1,1 @@
+import{q as o}from"./index-DiybX1U8.js";const t={createRole:e=>o.apiRolesCreate({roleRequest:e}),updateRole:(e,s)=>o.apiRolesUpdate({id:e,roleRequest:s}),deleteRole:e=>o.apiRolesDestroy({id:e}),fetchRoles:()=>o.apiRolesList(),updateUserRoles:(e,s)=>o.apiRolesUsersUpdate({id:e,roleUserRequest:s})};export{t as r};

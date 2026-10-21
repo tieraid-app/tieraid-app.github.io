@@ -1,0 +1,1 @@
+var e=e=>({SE:e(`country.sweden`),NO:e(`country.norway`),FI:e(`country.finland`),DK:e(`country.denmark`)});export{e as t};

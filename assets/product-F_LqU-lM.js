@@ -1,0 +1,1 @@
+var e=e=>e.brand?`${e.brand} - ${e.name}`:e.name,t=(e,t,n)=>{if(t<=0||e<=0)return 0;if(e>t&&t>0){let r=e%t;return Math.floor(e/t)+ +(r>=n)}return+(e>=n)};export{e as n,t};
